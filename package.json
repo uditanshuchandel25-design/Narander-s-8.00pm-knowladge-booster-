@@ -1,0 +1,18 @@
+{
+  "name": "bm-daily-intel",
+  "version": "1.0.0",
+  "description": "Personal 8:00 PM IST Daily Banking, Regulatory & Insurance Intelligence App for Branch Manager, HDFC Bank (Panchkula)",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "fetch": "node scripts/fetch-intel.js",
+    "test": "node tests/run-tests.mjs",
+    "test:ui": "node tests/uiux-cdp-test.mjs",
+    "test:agents": "node tests/agent-bench.mjs",
+    "test:e2e": "node tests/e2e-smooth-test.mjs",
+    "test:all": "node tests/run-tests.mjs && node tests/agent-bench.mjs && node tests/uiux-cdp-test.mjs && node tests/e2e-smooth-test.mjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "./",
+  "name": "BM Intel — Executive Banking Command Centre",
+  "short_name": "BM Intel",
+  "description": "Personal 8:00 PM IST Banking, Regulatory & Insurance Command Centre for Branch Manager, HDFC Bank (Panchkula).",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF5E6",
+  "theme_color": "#FFF5E6",
+  "categories": ["finance", "news", "business"],
+  "icons": [
+    {
+      "src": "./icons/bm-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/bm-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/bm-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

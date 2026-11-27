@@ -1,0 +1,40 @@
+name: Daily 8PM IST Banking & Insurance Brief
+
+on:
+  schedule:
+    # 14:30 UTC = 20:00 (8:00 PM) IST every day
+    - cron: "30 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-intel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Fetch verified last-24h BFSI intelligence
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash
+        run: node scripts/fetch-intel.js
+
+      - name: Commit & publish updated 8PM IST edition
+        run: |
+          git config user.name "BM Daily Intel Bot"
+          git config user.email "bot@bm-daily-intel.local"
+          git add public/data/
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Publish daily 8:00 PM IST banking intelligence edition"
+            git push
+          fi

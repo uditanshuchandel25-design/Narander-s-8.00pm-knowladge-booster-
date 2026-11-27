@@ -1,0 +1,61 @@
+﻿======================================================================
+  BM INTEL — NARANDER'S PERSONAL KNOWLEDGE (8:00 PM IST DESK)
+  HDFC Bank, Panchkula (Tricity) | TypeUI Bento Edition + Red BM Logo
+======================================================================
+
+WHAT IS INSIDE THIS PACKAGE:
+  - server.js                     : Zero-dependency Node.js 24 web server + 8:00 PM IST scheduler
+  - scripts/sources.js            : 18 direct Official & Tier-1 BFSI RSS feeds
+  - scripts/executive-editor.js   : Senior BM Signal Editor Agent (cuts basic/routine noise)
+  - scripts/fetch-intel.js        : Live 24h fetcher, deep article extractor & WhatsApp draft generator
+  - public/                       : Complete Installable Mobile PWA (TypeUI Bento Light & Dark + Red BM Logo)
+  - public/icons/bm-logo.png      : Custom Chiaroscuro Red "BM" Executive Logo (512x512 & 192x192)
+  - start-app.bat                 : Double-click to launch BM INTEL on PC + same Wi-Fi phones
+  - install-8pm-agent.bat         : Double-click once to register daily 8:00 PM IST Windows auto-sync
+  - .github/workflows/daily-8pm-intel.yml : 24/7 Cloud 8:00 PM IST GitHub Actions auto-updater
+  - tests/                        : Unit, 4-Agent Efficiency, Headless UI/UX, and E2E test suites
+
+----------------------------------------------------------------------
+1. RUN ON YOUR PC RIGHT NOW
+----------------------------------------------------------------------
+  Double-click:  start-app.bat
+  Open in browser: http://localhost:8080
+
+----------------------------------------------------------------------
+2. INSTALL LIKE A NATIVE APP ON ANDROID (CHROME) — FULL-SCREEN RED BM ICON
+----------------------------------------------------------------------
+  Android Chrome requires an HTTPS link to show the native "Install app"
+  option (full-screen app in App Drawer + Home Screen, no browser bar).
+
+  FASTEST 30-SECOND TEST (Netlify Drop):
+    1) Open https://app.netlify.com/drop on your PC.
+    2) Drag and drop ONLY the "public" folder from inside this folder onto the page.
+    3) Netlify gives you a live https://....netlify.app link immediately.
+    4) Send that link to the Android phone on WhatsApp -> open in Google Chrome.
+    5) Tap ⋮ (top-right) -> "Install app" (or tap "Install App" in the System tab) -> Install.
+    6) Your Red "BM" icon installs to the Home Screen & App Drawer!
+
+  ON IPHONE (SAFARI):
+    Open the same https://... link in Safari -> Share (↑) -> Add to Home Screen -> Add.
+
+----------------------------------------------------------------------
+3. MAKE IT AUTO-UPDATE AT 8:00 PM IST DAILY EVEN WHEN PC IS OFF
+----------------------------------------------------------------------
+  Option A (100% Free Forever — GitHub + Netlify / GitHub Pages):
+    1) Upload this folder to a GitHub repository.
+    2) Enable GitHub Actions (workflow already ready at .github/workflows/daily-8pm-intel.yml).
+       Every day at 8:00 PM IST it refreshes public/data/ automatically.
+    3) Connect the repo to Netlify (Publish directory: public) or GitHub Pages.
+
+  Option B (Full Live Cloud Server — Enables Mid-Day "Sync" Button From Phone):
+    1) Upload this folder to GitHub.
+    2) On Render.com -> New Web Service -> connect repo -> Start Command: node server.js
+
+----------------------------------------------------------------------
+4. VERIFY EVERYTHING ANYTIME (POWERSHELL)
+----------------------------------------------------------------------
+  npm.cmd test             (Unit & REST API tests)
+  npm.cmd run test:agents  (4-Agent efficiency benchmark)
+  npm.cmd run test:ui      (Headless Chrome UI/UX + Sticky dock check)
+  npm.cmd run test:e2e     (Full mobile & desktop user journey test)
+  npm.cmd run test:all     (Runs all 4 suites)

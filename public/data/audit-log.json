@@ -1,0 +1,722 @@
+[
+  {
+    "id": "log_1795809198500_umjv",
+    "timestampUtc": "2026-11-27T19:53:18.500Z",
+    "timestampIst": "28 Nov, 01:23 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795809084398_hbad",
+    "timestampUtc": "2026-11-27T19:51:24.398Z",
+    "timestampIst": "28 Nov, 01:21 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  },
+  {
+    "id": "log_1795809084385_zj1a",
+    "timestampUtc": "2026-11-27T19:51:24.385Z",
+    "timestampIst": "28 Nov, 01:21 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp message for my team on RBI KYC directions\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795809084371_2toe",
+    "timestampUtc": "2026-11-27T19:51:24.371Z",
+    "timestampIst": "28 Nov, 01:21 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795808549598_ktaw",
+    "timestampUtc": "2026-11-27T19:42:29.598Z",
+    "timestampIst": "28 Nov, 01:12 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 15 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795808538119_0p1d",
+    "timestampUtc": "2026-11-27T19:42:18.119Z",
+    "timestampIst": "28 Nov, 01:12 am IST",
+    "action": "DRAFT_DISMISSED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Dismissed draft \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795808537805_5wdq",
+    "timestampUtc": "2026-11-27T19:42:17.805Z",
+    "timestampIst": "28 Nov, 01:12 am IST",
+    "action": "DRAFT_APPROVED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Approved & copied \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795808536886_4mct",
+    "timestampUtc": "2026-11-27T19:42:16.886Z",
+    "timestampIst": "28 Nov, 01:12 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a short WhatsApp alert for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795808523867_7y6t",
+    "timestampUtc": "2026-11-27T19:42:03.867Z",
+    "timestampIst": "28 Nov, 01:12 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795808509713_qmjh",
+    "timestampUtc": "2026-11-27T19:41:49.713Z",
+    "timestampIst": "28 Nov, 01:11 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  },
+  {
+    "id": "log_1795808509700_2lo6",
+    "timestampUtc": "2026-11-27T19:41:49.700Z",
+    "timestampIst": "28 Nov, 01:11 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp message for my team on RBI KYC directions\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795808509687_lc9h",
+    "timestampUtc": "2026-11-27T19:41:49.687Z",
+    "timestampIst": "28 Nov, 01:11 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795808152617_qrph",
+    "timestampUtc": "2026-11-27T19:35:52.617Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 15 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795808144048_m010",
+    "timestampUtc": "2026-11-27T19:35:44.048Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "DRAFT_DISMISSED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Dismissed draft \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795808143722_3puq",
+    "timestampUtc": "2026-11-27T19:35:43.722Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "DRAFT_APPROVED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Approved & copied \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795808142801_pxvd",
+    "timestampUtc": "2026-11-27T19:35:42.801Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a short WhatsApp alert for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795808142177_hge2",
+    "timestampUtc": "2026-11-27T19:35:42.177Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  },
+  {
+    "id": "log_1795808142139_rpnu",
+    "timestampUtc": "2026-11-27T19:35:42.139Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp message for my team on RBI KYC directions\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795808142061_z67c",
+    "timestampUtc": "2026-11-27T19:35:42.061Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795808124425_ex11",
+    "timestampUtc": "2026-11-27T19:35:24.425Z",
+    "timestampIst": "28 Nov, 01:05 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807969012_pjem",
+    "timestampUtc": "2026-11-27T19:32:49.012Z",
+    "timestampIst": "28 Nov, 01:02 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 15 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795807819253_p6zh",
+    "timestampUtc": "2026-11-27T19:30:19.253Z",
+    "timestampIst": "28 Nov, 01:00 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 15 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795807810483_em82",
+    "timestampUtc": "2026-11-27T19:30:10.483Z",
+    "timestampIst": "28 Nov, 01:00 am IST",
+    "action": "DRAFT_DISMISSED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Dismissed draft \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795807810163_snsw",
+    "timestampUtc": "2026-11-27T19:30:10.163Z",
+    "timestampIst": "28 Nov, 01:00 am IST",
+    "action": "DRAFT_APPROVED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Approved & copied \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795807809234_mdzx",
+    "timestampUtc": "2026-11-27T19:30:09.234Z",
+    "timestampIst": "28 Nov, 01:00 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a short WhatsApp alert for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795807796683_wzk0",
+    "timestampUtc": "2026-11-27T19:29:56.683Z",
+    "timestampIst": "28 Nov, 12:59 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807771732_8tu1",
+    "timestampUtc": "2026-11-27T19:29:31.732Z",
+    "timestampIst": "28 Nov, 12:59 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  },
+  {
+    "id": "log_1795807771716_k1s9",
+    "timestampUtc": "2026-11-27T19:29:31.716Z",
+    "timestampIst": "28 Nov, 12:59 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp message for my team on RBI KYC directions\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795807771702_fpj8",
+    "timestampUtc": "2026-11-27T19:29:31.702Z",
+    "timestampIst": "28 Nov, 12:59 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807677396_wdgd",
+    "timestampUtc": "2026-11-27T19:27:57.396Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 15 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795807670132_6o4p",
+    "timestampUtc": "2026-11-27T19:27:50.132Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "DRAFT_DISMISSED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Dismissed draft \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795807669818_33kl",
+    "timestampUtc": "2026-11-27T19:27:49.818Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "DRAFT_APPROVED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Approved & copied \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795807668907_v0vo",
+    "timestampUtc": "2026-11-27T19:27:48.907Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a short WhatsApp alert for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795807659811_qv5t",
+    "timestampUtc": "2026-11-27T19:27:39.811Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655092_b91m",
+    "timestampUtc": "2026-11-27T19:27:35.092Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Executive Banking Desk",
+    "status": "OK",
+    "detail": "Prompt: \"\" → matched 4 verified 24h items."
+  },
+  {
+    "id": "log_1795807655084_xiex",
+    "timestampUtc": "2026-11-27T19:27:35.084Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Compliance & RBI Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What are the latest card payment consolidated rules?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655076_5a2e",
+    "timestampUtc": "2026-11-27T19:27:35.076Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Tell me about SBI MSME Dream loan limit\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655069_5v7z",
+    "timestampUtc": "2026-11-27T19:27:35.069Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Write a short morning huddle note on RBI ATM fee cap\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795807655060_nytk",
+    "timestampUtc": "2026-11-27T19:27:35.060Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp update for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795807655052_d1yg",
+    "timestampUtc": "2026-11-27T19:27:35.052Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Global, Wealth & Macro Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What is happening with BOJ or global central banks?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655044_c7td",
+    "timestampUtc": "2026-11-27T19:27:35.044Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Insurance & Bancassurance (TPP) Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Any IRDAI health insurance or term plan changes?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655036_dgo5",
+    "timestampUtc": "2026-11-27T19:27:35.036Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Interest Rates & Pricing Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Show Bank of India MCLR and Dec 4 MPC rate outlook\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655028_iyka",
+    "timestampUtc": "2026-11-27T19:27:35.028Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Compliance & RBI Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Summarize RBI KYC and money mule directions\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807655017_cykx",
+    "timestampUtc": "2026-11-27T19:27:35.017Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795807654995_z796",
+    "timestampUtc": "2026-11-27T19:27:34.995Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 15 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795807643065_owqr",
+    "timestampUtc": "2026-11-27T19:27:23.065Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  },
+  {
+    "id": "log_1795807643058_b45i",
+    "timestampUtc": "2026-11-27T19:27:23.058Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp message for my team on RBI KYC directions\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795807643052_kgeg",
+    "timestampUtc": "2026-11-27T19:27:23.052Z",
+    "timestampIst": "28 Nov, 12:57 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806753834_yil1",
+    "timestampUtc": "2026-11-27T19:12:33.834Z",
+    "timestampIst": "28 Nov, 12:42 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 16 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795806741487_mlqc",
+    "timestampUtc": "2026-11-27T19:12:21.487Z",
+    "timestampIst": "28 Nov, 12:42 am IST",
+    "action": "DRAFT_DISMISSED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Dismissed draft \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795806741158_h7b1",
+    "timestampUtc": "2026-11-27T19:12:21.158Z",
+    "timestampIst": "28 Nov, 12:42 am IST",
+    "action": "DRAFT_APPROVED",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Approved & copied \"Draft Ready for Approval: HDFC Bank to stop SMS alerts for UPI payments up to ₹5…\"."
+  },
+  {
+    "id": "log_1795806740244_0q6z",
+    "timestampUtc": "2026-11-27T19:12:20.244Z",
+    "timestampIst": "28 Nov, 12:42 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a short WhatsApp alert for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795806597000_z2pz",
+    "timestampUtc": "2026-11-27T19:09:57.000Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590495_x5up",
+    "timestampUtc": "2026-11-27T19:09:50.495Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Executive Banking Desk",
+    "status": "OK",
+    "detail": "Prompt: \"\" → matched 4 verified 24h items."
+  },
+  {
+    "id": "log_1795806590485_mxib",
+    "timestampUtc": "2026-11-27T19:09:50.485Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Compliance & RBI Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What are the latest card payment consolidated rules?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590478_a5o7",
+    "timestampUtc": "2026-11-27T19:09:50.478Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Tell me about SBI MSME Dream loan limit\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590471_jdb7",
+    "timestampUtc": "2026-11-27T19:09:50.471Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Write a short morning huddle note on RBI ATM fee cap\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795806590465_5am5",
+    "timestampUtc": "2026-11-27T19:09:50.465Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp update for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795806590461_eyyt",
+    "timestampUtc": "2026-11-27T19:09:50.461Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Global, Wealth & Macro Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What is happening with BOJ or global central banks?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590457_w283",
+    "timestampUtc": "2026-11-27T19:09:50.457Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Insurance & Bancassurance (TPP) Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Any IRDAI health insurance or term plan changes?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590453_s1ue",
+    "timestampUtc": "2026-11-27T19:09:50.453Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Interest Rates & Pricing Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Show Bank of India MCLR and Dec 4 MPC rate outlook\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590446_jv2h",
+    "timestampUtc": "2026-11-27T19:09:50.446Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Compliance & RBI Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Summarize RBI KYC and money mule directions\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590435_uqbb",
+    "timestampUtc": "2026-11-27T19:09:50.435Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806590424_u48h",
+    "timestampUtc": "2026-11-27T19:09:50.424Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 16 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795806577118_nugx",
+    "timestampUtc": "2026-11-27T19:09:37.118Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  },
+  {
+    "id": "log_1795806577108_my95",
+    "timestampUtc": "2026-11-27T19:09:37.108Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp message for my team on RBI KYC directions\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795806577102_nlac",
+    "timestampUtc": "2026-11-27T19:09:37.102Z",
+    "timestampIst": "28 Nov, 12:39 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806256624_lbib",
+    "timestampUtc": "2026-11-27T19:04:16.624Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242162_0lkq",
+    "timestampUtc": "2026-11-27T19:04:02.162Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Executive Banking Desk",
+    "status": "OK",
+    "detail": "Prompt: \"\" → matched 4 verified 24h items."
+  },
+  {
+    "id": "log_1795806242153_g941",
+    "timestampUtc": "2026-11-27T19:04:02.153Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Compliance & RBI Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What are the latest card payment consolidated rules?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242145_re93",
+    "timestampUtc": "2026-11-27T19:04:02.145Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Tell me about SBI MSME Dream loan limit\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242136_rjvt",
+    "timestampUtc": "2026-11-27T19:04:02.136Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Write a short morning huddle note on RBI ATM fee cap\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795806242126_3zig",
+    "timestampUtc": "2026-11-27T19:04:02.126Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Huddle & Communications Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Draft a WhatsApp update for my team on HDFC UPI SMS rule\" → matched 5 verified 24h items + queued approval draft."
+  },
+  {
+    "id": "log_1795806242117_vvy7",
+    "timestampUtc": "2026-11-27T19:04:02.117Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Global, Wealth & Macro Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What is happening with BOJ or global central banks?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242107_crta",
+    "timestampUtc": "2026-11-27T19:04:02.107Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Insurance & Bancassurance (TPP) Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Any IRDAI health insurance or term plan changes?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242095_qmrg",
+    "timestampUtc": "2026-11-27T19:04:02.095Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Interest Rates & Pricing Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Show Bank of India MCLR and Dec 4 MPC rate outlook\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242081_muq5",
+    "timestampUtc": "2026-11-27T19:04:02.081Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "Compliance & RBI Desk",
+    "status": "OK",
+    "detail": "Prompt: \"Summarize RBI KYC and money mule directions\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806242055_edd4",
+    "timestampUtc": "2026-11-27T19:04:02.055Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "COMMAND_QUERY",
+    "department": "HDFC & Bank Policies Desk",
+    "status": "OK",
+    "detail": "Prompt: \"What changed in HDFC Bank today?\" → matched 5 verified 24h items."
+  },
+  {
+    "id": "log_1795806241977_3v29",
+    "timestampUtc": "2026-11-27T19:04:01.977Z",
+    "timestampIst": "28 Nov, 12:34 am IST",
+    "action": "EDITOR_AGENT_RUN",
+    "department": "Senior BM Signal Editor",
+    "status": "OK",
+    "detail": "Edition 2026-11-28: Kept 21 crisp net-new signals (~7 min read), suppressed 16 routine/basic explainers from 18/18 live feeds."
+  },
+  {
+    "id": "log_1795806228900_uz0a",
+    "timestampUtc": "2026-11-27T19:03:48.900Z",
+    "timestampIst": "28 Nov, 12:33 am IST",
+    "action": "TEST_PING",
+    "department": "QA Harness",
+    "status": "OK",
+    "detail": "Automated test verification"
+  }
+]

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" id="metaThemeColor" content="#FFF5E6" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="BM Intel" />
+  <title>BM INTEL — Banking Command Centre | HDFC Bank Panchkula</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </noscript>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icons/bm-logo-192.png?v=12" type="image/png" />
+  <link rel="apple-touch-icon" href="./icons/bm-logo.png?v=12" />
+  <link rel="stylesheet" href="./styles.css?v=12" />
+</head>
+<body>
+  <!-- Optional Personal PIN Lock Overlay -->
+  <div
+    id="pinOverlay"
+    class="pin-overlay hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="pinDialogTitle"
+    aria-hidden="true"
+  >
+    <div class="bento-card pin-card">
+      <div class="pin-logo-frame">
+        <img src="./icons/bm-logo-192.png?v=12" alt="BM Intel" width="76" height="76" />
+      </div>
+      <div class="bento-eyebrow pin-brand">BM INTEL · PANCHKULA</div>
+      <h2 id="pinDialogTitle">Executive Desk Lock</h2>
+      <p>Enter your 4-digit personal PIN to access today's briefing &amp; approvals.</p>
+      <input
+        id="pinInput"
+        type="password"
+        inputmode="numeric"
+        maxlength="4"
+        placeholder="••••"
+        autocomplete="off"
+        aria-label="4-digit personal PIN"
+      />
+      <div id="pinError" class="pin-error" role="alert"></div>
+      <button id="pinUnlockBtn" type="button" class="btn-primary full-width">Unlock Command Centre</button>
+    </div>
+  </div>
+
+  <div id="appShell" class="app-shell phone-frame">
+    <!-- Top Bento Command Bar -->
+    <header class="topbar">
+      <div class="topbar-row">
+        <div class="brand-cluster">
+          <div class="brand-glyph">
+            <img src="./icons/bm-logo-192.png?v=12" alt="BM Intel logo" class="brand-logo-img" width="40" height="40" />
+          </div>
+          <div class="brand-meta">
+            <div class="brand-name-row">
+              <span class="brand-name">BM INTEL</span>
+              <span class="desk-tag">Panchkula</span>
+            </div>
+            <div id="taskPill" class="task-pill" role="status" aria-live="polite">
+              <span class="status-dot" id="taskDot" aria-hidden="true"></span>
+              <span id="taskPillText">Connecting 18 live sources…</span>
+            </div>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <button
+            id="layoutToggleBtn"
+            type="button"
+            class="icon-btn desktop-only"
+            title="Toggle Phone / Wide Bento Desk"
+            aria-label="Toggle between phone and wide bento layout"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+              <line x1="9" y1="4" x2="9" y2="20"></line>
+            </svg>
+          </button>
+          <button
+            id="themeToggleBtn"
+            type="button"
+            class="icon-btn"
+            title="Switch Light / Dark Bento Theme"
+            aria-label="Switch color theme"
+          >
+            <span id="themeIcon" aria-hidden="true">☾</span>
+          </button>
+          <button id="refreshBtn" type="button" class="sync-pill-btn" title="Sync Latest 24h Live Feeds">
+            <span class="refresh-spinner" id="refreshIcon" aria-hidden="true">↻</span>
+            <span>Sync</span>
+          </button>
+        </div>
+      </div>
+      <div class="progress-rail" aria-hidden="true">
+        <div id="liveProgressBar" class="progress-fill"></div>
+      </div>
+    </header>
+
+    <!-- Historical Edition Notice Banner -->
+    <div id="archiveBanner" class="archive-banner hidden" role="status">
+      <span id="archiveBannerText">Viewing Archived Edition</span>
+      <button id="returnLatestBtn" type="button" class="btn-chip-accent">Latest Edition</button>
+    </div>
+
+    <!-- Main Scrollable Viewport -->
+    <main class="viewport" id="mainScroll">
+      <!-- ===================================================== -->
+      <!-- TAB 1: COMMAND CENTRE (TYPEUI BENTO GRID HOME)        -->
+      <!-- ===================================================== -->
+      <section id="tab-command" class="tab-panel active" aria-label="Command Centre">
+        <div class="bento-command-grid">
+          <!-- Hero Warm Peach Bento Block -->
+          <section class="bento-card bento-hero-card" aria-label="Daily briefing overview">
+            <div class="hero-top-bar">
+              <span class="mono-pill" id="heroEditionPill">Loading edition…</span>
+              <span class="live-status-chip" id="heroSourcesPill">18/18 live</span>
+            </div>
+            <div class="hero-identity-row">
+              <div class="hero-logo-frame">
+                <img src="./icons/bm-logo.png?v=12" alt="BM Executive Emblem" class="hero-logo-img" width="64" height="64" />
+              </div>
+              <h1 class="hero-headline">
+                <span class="hero-brand-accent">BM INTEL</span>
+                <span id="greetingPhrase">has your evening brief ready</span>
+              </h1>
+            </div>
+            <div class="hero-metrics-strip">
+              <div class="hero-mini-cell">
+                <span class="hero-mini-label">READ TIME</span>
+                <span class="hero-mini-val" id="heroReadPill">~6 min read</span>
+              </div>
+              <div class="hero-mini-cell">
+                <span class="hero-mini-label">SIGNALS KEPT</span>
+                <span class="hero-mini-val" id="heroSignalsVal">--</span>
+              </div>
+              <div class="hero-mini-cell">
+                <span class="hero-mini-label">NOISE CUT</span>
+                <span class="hero-mini-val" id="heroNoiseVal">--</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Modular 2x2 Bento Attention Matrix -->
+          <section class="bento-card attention-panel" aria-label="Needs your attention">
+            <div class="bento-card-head">
+              <div class="bento-eyebrow">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span>NEEDS YOUR ATTENTION</span>
+              </div>
+              <span class="mono-caption">LIVE TRIAGE</span>
+            </div>
+            <div id="attentionRows" class="attention-bento-grid">
+              <div class="attention-row skeleton-tile" aria-busy="true">Loading live triage…</div>
+              <div class="attention-row skeleton-tile" aria-busy="true">Loading RBI alerts…</div>
+              <div class="attention-row skeleton-tile" aria-busy="true">Loading HDFC updates…</div>
+              <div class="attention-row skeleton-tile" aria-busy="true">Loading rate moves…</div>
+            </div>
+          </section>
+
+          <!-- Command Centre Bento Block: Ask in Your Own Words -->
+          <section class="bento-card command-panel" aria-label="Ask BM Intel">
+            <div class="bento-card-head">
+              <div class="bento-eyebrow">
+                <span class="eyebrow-dot dot-steel" aria-hidden="true"></span>
+                <span>COMMAND CENTRE</span>
+              </div>
+              <span class="mono-caption">ASK DESK</span>
+            </div>
+            <h2 class="panel-title command-heading">Ask in your own words</h2>
+            <form id="commandForm" class="command-input-wrap">
+              <input
+                id="commandInput"
+                type="text"
+                placeholder="Ask RBI, HDFC, MCLR/FD, or draft…"
+                autocomplete="off"
+                aria-label="Ask BM Intel a question or request a draft"
+              />
+              <button type="submit" id="commandSubmitBtn" class="btn-send" aria-label="Send prompt">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+            <div class="prompt-chips" id="commandPresets">
+              <button type="button" class="prompt-chip" data-prompt="What changed in HDFC Bank today?">HDFC updates today</button>
+              <button type="button" class="prompt-chip" data-prompt="Summarize today's RBI circulars and KYC rules">RBI circulars &amp; KYC</button>
+              <button type="button" class="prompt-chip" data-prompt="Compare SCSS vs HDFC Senior Citizen FD and MCLR changes">Rates: SCSS &amp; MCLR</button>
+              <button type="button" class="prompt-chip" data-prompt="Draft a short WhatsApp alert for my team on HDFC UPI SMS rule">Draft WhatsApp alert</button>
+            </div>
+
+            <!-- Command Response Area -->
+            <div id="commandResultBox" class="command-result hidden" aria-live="polite">
+              <div class="pipeline-strip" id="commandPipeline"></div>
+              <div class="command-answer-summary" id="commandSummary"></div>
+              <ul class="command-bullets" id="commandBullets"></ul>
+              <div id="commandDraftCta" class="command-draft-cta hidden"></div>
+              <div id="commandSources" class="command-sources"></div>
+            </div>
+          </section>
+
+          <!-- 60-Second Top 5 Executive Pulse Bento Block -->
+          <section class="bento-card pulse-panel" aria-label="Top 5 Developments">
+            <div class="panel-head-row">
+              <div>
+                <div class="bento-eyebrow">
+                  <span class="eyebrow-dot dot-success" aria-hidden="true"></span>
+                  <span>60-SECOND EXECUTIVE PULSE</span>
+                </div>
+                <h2 class="panel-title">Top 5 Developments (Last 24h)</h2>
+              </div>
+              <button id="openFullBriefBtn" type="button" class="btn-secondary-sm">Full Brief →</button>
+            </div>
+            <ol id="topFiveList" class="pulse-list">
+              <li>Syncing verified official &amp; Tier-1 banking feeds…</li>
+            </ol>
+          </section>
+        </div>
+      </section>
+
+      <!-- ===================================================== -->
+      <!-- TAB 2: COMPLETE 5-8 MIN BRIEF (BENTO SIGNAL DECK)     -->
+      <!-- ===================================================== -->
+      <section id="tab-brief" class="tab-panel" aria-label="Executive Brief">
+        <div class="bento-card brief-header-card">
+          <div class="bento-card-head">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot dot-success" aria-hidden="true"></span>
+              <span>SENIOR BM SIGNAL EDITOR · ZERO-WASTE BRIEF</span>
+            </div>
+          </div>
+          <div class="brief-meta-line" id="editionSubline">Loading…</div>
+          <div id="editorAgentBar" class="editor-agent-bar">
+            <span class="editor-badge">● EDITOR AGENT ACTIVE</span>
+            <span id="editorAgentStats" class="editor-stats-text">Filtering routine &amp; basic items…</span>
+          </div>
+        </div>
+
+        <!-- Sentinel triggers sticky state cleanly via IntersectionObserver -->
+        <div id="briefFilterSentinel" class="sticky-sentinel" aria-hidden="true"></div>
+
+        <!-- Sticky Bank Segment Filter & Section Switcher Dock -->
+        <div id="briefFilterDock" class="bento-card brief-filter-dock" role="region" aria-label="Filter by bank segment and jump to section">
+          <div class="filter-dock-top">
+            <div class="filter-label">FILTER BY BANK SEGMENT</div>
+            <span id="stickyActiveBadge" class="sticky-active-badge hidden"></span>
+          </div>
+          <div id="bankFilterBar" class="chip-row" role="tablist" aria-label="Filter by bank segment"></div>
+          <div id="sectionJumpBar" class="jump-row" aria-label="Jump to brief section"></div>
+        </div>
+
+        <div id="sectionsContainer" class="sections-stack"></div>
+
+        <!-- Collapsible Transparency Drawer: Routine / Basic Items Suppressed -->
+        <details id="suppressedDrawer" class="bento-card suppressed-drawer hidden">
+          <summary id="suppressedSummary">Filtered Out (0 routine/basic items you already know)</summary>
+          <div id="suppressedList" class="suppressed-list"></div>
+        </details>
+      </section>
+
+      <!-- ===================================================== -->
+      <!-- TAB 3: APPROVALS GATE (HUMAN-IN-THE-LOOP BENTO)       -->
+      <!-- ===================================================== -->
+      <section id="tab-approvals" class="tab-panel" aria-label="Approvals and Saved Circulars">
+        <div class="bento-card bento-peach-header approvals-hero">
+          <div class="bento-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>HUMAN-IN-THE-LOOP · ASKS BEFORE IT ACTS</span>
+          </div>
+          <h2 class="panel-title-lg">Approvals &amp; Team Briefings</h2>
+          <p class="muted-copy">Review, edit, and approve your 9:30 AM Panchkula huddle and team/customer notes before copying to WhatsApp. Every approval is recorded in the Audit Log.</p>
+        </div>
+
+        <div id="approvalsList" class="approvals-bento-grid"></div>
+
+        <!-- Bookmarked Circulars & Items -->
+        <div class="bento-card section-card-block">
+          <div class="panel-head-row">
+            <div>
+              <div class="bento-eyebrow">
+                <span class="eyebrow-dot dot-steel" aria-hidden="true"></span>
+                <span>PERSONAL REFERENCE</span>
+              </div>
+              <h3 class="panel-title">Saved Circulars &amp; Updates (<span id="bookmarkCount" class="tabular-num">0</span>)</h3>
+            </div>
+            <button id="clearBookmarksBtn" type="button" class="btn-link-danger hidden">Clear All</button>
+          </div>
+          <div id="bookmarksList" class="stack-sm"></div>
+        </div>
+      </section>
+
+      <!-- ===================================================== -->
+      <!-- TAB 4: SYSTEM, ARCHIVE & AUDIT DESK (BENTO GRID)      -->
+      <!-- ===================================================== -->
+      <section id="tab-system" class="tab-panel" aria-label="System, Archive and Audit Log">
+        <div class="bento-system-grid">
+          <!-- Scheduler & System Status Bento -->
+          <div class="bento-card section-card-block sys-span-full">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span>SCHEDULER &amp; ENGINE</span>
+            </div>
+            <h3 class="panel-title">Daily 8:00 PM IST Automation</h3>
+            <div class="status-grid">
+              <div class="stat-tile stat-tile-peach">
+                <div class="stat-label">Next 8:00 PM IST Sync</div>
+                <div class="stat-val" id="countdownClock">--h --m --s</div>
+              </div>
+              <div class="stat-tile stat-tile-steel">
+                <div class="stat-label">Verified Feeds Online</div>
+                <div class="stat-val" id="feedsOnlineStat">-- / --</div>
+              </div>
+              <div class="stat-tile full-span">
+                <div class="stat-label">Intelligence Mode</div>
+                <div class="stat-val-sm" id="synthesisModeStat">Checking…</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Archive Search Bento -->
+          <div class="bento-card section-card-block sys-col-left">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot dot-steel" aria-hidden="true"></span>
+              <span>ARCHIVE &amp; FULL-TEXT SEARCH</span>
+            </div>
+            <h3 class="panel-title">Search Saved 8:00 PM Editions</h3>
+            <div class="search-bar">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search RBI, KYC, MCLR, FD, HDFC, IRDAI, SBI…"
+                autocomplete="off"
+                aria-label="Search saved editions"
+              />
+              <button id="searchClearBtn" type="button" class="btn-secondary-sm hidden">Clear</button>
+            </div>
+            <div class="chip-row quick-search-chips" id="quickSearchChips">
+              <button type="button" class="chip" data-q="RBI">RBI</button>
+              <button type="button" class="chip" data-q="HDFC">HDFC</button>
+              <button type="button" class="chip" data-q="MCLR">MCLR</button>
+              <button type="button" class="chip" data-q="SCSS">SCSS / FD</button>
+              <button type="button" class="chip" data-q="Health">Health Ins.</button>
+              <button type="button" class="chip" data-q="SBI">SBI</button>
+              <button type="button" class="chip" data-q="KYC">KYC / Mule</button>
+              <button type="button" class="chip" data-q="UPI">UPI</button>
+            </div>
+            <div id="searchResultsWrap" class="hidden">
+              <div class="search-meta" id="searchMeta"></div>
+              <div id="searchResultsList" class="stack-sm"></div>
+            </div>
+            <div class="subhead-divider">PAST DAILY EDITIONS</div>
+            <div id="editionsList" class="stack-sm"></div>
+          </div>
+
+          <!-- Transparent Audit Log Bento -->
+          <div class="bento-card section-card-block sys-col-right">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot dot-success" aria-hidden="true"></span>
+              <span>AUDIT LOG</span>
+            </div>
+            <h3 class="panel-title">Recent Assistant Activity</h3>
+            <div id="auditLogList" class="audit-list"></div>
+          </div>
+
+          <!-- Phone Access & PIN Bento -->
+          <div class="bento-card section-card-block sys-span-full">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span>PHONE INSTALL (ANDROID &amp; IPHONE)</span>
+            </div>
+            <h3 class="panel-title">Install on Home Screen &amp; PIN Lock</h3>
+            <div id="lanUrlsBox" class="lan-box hidden"></div>
+            <div id="pwaInstallBanner" class="install-cta-box hidden">
+              <div>
+                <strong>Ready to install on this phone</strong>
+                <div class="muted-copy small">Adds the Red BM icon to your Home Screen &amp; App Drawer (full-screen, no browser bar).</div>
+              </div>
+              <button id="installAppBtn" type="button" class="btn-primary">Install App</button>
+            </div>
+            <div class="install-steps">
+              <div class="install-step"><strong>Android (Chrome):</strong> Open your HTTPS link → tap <strong>⋮ Menu</strong> → <strong>Install app</strong> (or tap <strong>Install App</strong> when prompted).</div>
+              <div class="install-step"><strong>iPhone (Safari):</strong> Open your HTTPS link in Safari → tap <strong>Share (↑)</strong> → <strong>Add to Home Screen</strong>.</div>
+            </div>
+            <div class="subhead-divider">4-DIGIT PERSONAL PIN</div>
+            <div class="pin-setup-row">
+              <input
+                id="newPinInput"
+                type="password"
+                inputmode="numeric"
+                maxlength="4"
+                placeholder="4 digits"
+                aria-label="New 4-digit personal PIN"
+              />
+              <button id="savePinBtn" type="button" class="btn-primary">Enable PIN</button>
+              <button id="removePinBtn" type="button" class="btn-danger-soft hidden">Remove</button>
+            </div>
+            <div id="pinSetupMsg" class="muted-copy small" role="status" aria-live="polite"></div>
+          </div>
+
+          <!-- Official & Tier-1 Source Whitelist Health Bento -->
+          <div class="bento-card section-card-block sys-span-full">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot dot-success" aria-hidden="true"></span>
+              <span>VERIFIED WHITELIST MONITOR</span>
+            </div>
+            <h3 class="panel-title">18 Official &amp; Tier-1 Sources</h3>
+            <div id="sourceHealthList" class="source-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bento Bottom Navigation Dock -->
+    <nav class="bottom-dock" aria-label="Primary navigation">
+      <button type="button" class="dock-btn active" data-tab="command" aria-current="page">
+        <span class="dock-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="9" rx="2"></rect>
+            <rect x="14" y="3" width="7" height="5" rx="2"></rect>
+            <rect x="14" y="12" width="7" height="9" rx="2"></rect>
+            <rect x="3" y="16" width="7" height="5" rx="2"></rect>
+          </svg>
+        </span>
+        <span class="dock-label">Command</span>
+      </button>
+      <button type="button" class="dock-btn" data-tab="brief">
+        <span class="dock-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 18h10"></path>
+          </svg>
+        </span>
+        <span class="dock-label">Brief</span>
+      </button>
+      <button type="button" class="dock-btn" data-tab="approvals">
+        <span class="dock-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 11l3 3L22 4"></path>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+          </svg>
+        </span>
+        <span class="dock-label">Approvals</span>
+        <span id="approvalsNavBadge" class="dock-badge hidden">0</span>
+      </button>
+      <button type="button" class="dock-btn" data-tab="system">
+        <span class="dock-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </span>
+        <span class="dock-label">System</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="./app.js?v=12" type="module"></script>
+</body>
+</html>

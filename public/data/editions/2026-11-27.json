@@ -1,0 +1,945 @@
+{
+  "editionDate": "2026-11-27",
+  "editionLabel": "Fri, 27 Nov, 2026, 11:54 pm IST",
+  "scheduledSlot": "8:00 PM IST Daily Brief",
+  "generatedAtUtc": "2026-11-27T18:24:11.000Z",
+  "profile": {
+    "name": "Narendra",
+    "role": "Branch Manager",
+    "organization": "HDFC Bank",
+    "location": "Panchkula (Tricity)"
+  },
+  "synthesisMode": "Deep Article Executive Summarizer (18 Direct Official & Tier-1 Sources)",
+  "stats": {
+    "totalItems": 26,
+    "estimatedReadMinutes": 8,
+    "feedsOnline": 18,
+    "feedsTotal": 18,
+    "highPriorityCount": 8,
+    "rbiCount": 6,
+    "ratesCount": 6,
+    "hdfcCount": 2,
+    "insuranceCount": 2,
+    "pendingDraftsCount": 3
+  },
+  "topFive": [
+    {
+      "text": "Reserve Bank of India (Payment Banks - Know Your Customer) Amendment Directions, 2026",
+      "takeaway": "Feedback received on the above draft Directions has been examined and the consequent modifications have been suitably incorporated in the final Amendment Directions.",
+      "section": "rbi_regulatory",
+      "source": "RBI Notifications",
+      "url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13768&Mode=0",
+      "bankCategories": [
+        "PSU/Govt",
+        "Semi-Govt"
+      ]
+    },
+    {
+      "text": "HDFC Bank to stop SMS alerts for UPI payments up to ₹500 from January 1, 2027",
+      "takeaway": "This means customers making UPI payments of ₹100, ₹200, ₹400 or ₹500 will not receive an SMS alert from the bank after completing the transaction.",
+      "section": "bank_policies",
+      "source": "CNBC-TV18 — Personal Finance & Insurance",
+      "url": "https://www.cnbctv18.com/personal-finance/hdfc-bank-to-stop-sms-alerts-for-upi-payments-up-to-%25e2%2582%25b9500-from-january-1-2027-20043303.htm",
+      "bankCategories": [
+        "HDFC",
+        "PSU/Govt"
+      ]
+    },
+    {
+      "text": "SCSS vs HDFC Senior Citizen FD: Which gives better returns on ₹10,00,000, ₹20,00,000 and ₹30,00,000?",
+      "takeaway": "The Senior Citizens Savings Scheme offers an 8.2% annual interest rate, outperforming HDFC Bank's 7.2% senior citizen FD rate and generating higher annual returns across various investment amounts.",
+      "section": "interest_rates",
+      "source": "CNBC-TV18 — Personal Finance & Insurance",
+      "url": "https://www.cnbctv18.com/personal-finance/scss-vs-hdfc-senior-citizen-fd-which-gives-better-returns-on-rs-1000000-rs-2000000-and-rs-3000000-20043200.htm",
+      "bankCategories": [
+        "HDFC",
+        "Semi-Govt"
+      ]
+    },
+    {
+      "text": "Robotic surgery: How much will your health insurance policy actually pay?",
+      "takeaway": "Check policy sub-limits, exclusions and coverage for robotic-assisted surgery to avoid unexpected out-of-pocket expenses",
+      "section": "insurance",
+      "source": "Business Standard — Finance",
+      "url": "https://www.business-standard.com/finance/personal-finance/robotic-surgery-how-much-will-your-health-insurance-policy-actually-pay-126112601572_1.html",
+      "bankCategories": [
+        "PSU/Govt"
+      ]
+    },
+    {
+      "text": "Direct vs regular mutual funds: SIPs through distributors stay invested longer, but do higher costs eat into returns?",
+      "takeaway": "SIP investments in regular mutual fund plans stay invested longer than those in direct plans, a Wealthy–Monitor Deloitte study found.",
+      "section": "finance_macro",
+      "source": "Livemint — Money & Personal Finance",
+      "url": "https://www.livemint.com/money/personal-finance/direct-vs-regular-mutual-funds-sips-through-distributors-stay-invested-longer-but-do-higher-costs-eat-into-returns-11795800153602.html",
+      "bankCategories": [
+        "PSU/Govt"
+      ]
+    }
+  ],
+  "morningHuddle": {
+    "title": "Next-Day 9:30 AM Panchkula Branch Huddle Playbook",
+    "salesHook": "Rate Pitch: \"SCSS vs HDFC Senior Citizen FD: Which gives better returns on ₹10,00,000, ₹20,00,000 and ₹30,00,000?\" (CNBC-TV18 — Personal Finance & Insurance) — The Senior Citizens Savings Scheme offers an 8.2% annual interest rate, outperforming HDFC Bank's 7.2% senior citizen FD rate and generating higher annual returns across various investment amounts.",
+    "competitorCounter": "Peer Counter: \"SBI to up lending under 'MSME Dream' to Rs 50 cr by March 2027\" (Economic Times — Banking & Finance) — Counter across Panchkula with HDFC Bank's faster digital sanction TAT, CMS/working-capital bundling, and Imperia/Preferred relationship depth.",
+    "opsAlert": "Frontline Policy + Compliance: (1) Brief every PB/Teller on \"HDFC Bank to stop SMS alerts for UPI payments up to ₹500 from January 1, 2027\"; (2) Flag RBI update \"Reserve Bank of India (Payment Banks - Know Your Customer) Amendment Directions, 2026\" for strict counter & audit discipline.",
+    "tppFocus": "Insurance Desk (Health): \"Robotic surgery: How much will your health insurance policy actually pay?\" — Check policy sub-limits, exclusions and coverage for robotic-assisted surgery to avoid unexpected out-of-pocket expenses"
+  },
+  "pendingDrafts": [
+    {
+      "id": "huddle_2026-11-27",
+      "department": "Branch Leadership · Huddle",
+      "channel": "WhatsApp / Team Huddle",
+      "title": "9:30 AM Panchkula Morning Huddle Brief",
+      "reason": "Prepared from verified last-24h RBI, pricing, policy & insurance updates — awaiting your approval before sharing.",
+      "body": "*HDFC Bank Panchkula — 9:30 AM Morning Huddle*\nEdition: 2026-11-27 (8:00 PM IST Intel)\n\n1) *Sales Hook:* Rate Pitch: \"SCSS vs HDFC Senior Citizen FD: Which gives better returns on ₹10,00,000, ₹20,00,000 and ₹30,00,000?\" (CNBC-TV18 — Personal Finance & Insurance) — The Senior Citizens Savings Scheme offers an 8.2% annual interest rate, outperforming HDFC Bank's 7.2% senior citizen FD rate and generating higher annual returns across various investment amounts.\n\n2) *Competitor Counter:* Peer Counter: \"SBI to up lending under 'MSME Dream' to Rs 50 cr by March 2027\" (Economic Times — Banking & Finance) — Counter across Panchkula with HDFC Bank's faster digital sanction TAT, CMS/working-capital bundling, and Imperia/Preferred relationship depth.\n\n3) *Ops & Compliance Alert:* Frontline Policy + Compliance: (1) Brief every PB/Teller on \"HDFC Bank to stop SMS alerts for UPI payments up to ₹500 from January 1, 2027\"; (2) Flag RBI update \"Reserve Bank of India (Payment Banks - Know Your Customer) Amendment Directions, 2026\" for strict counter & audit discipline.\n\n4) *Insurance / TPP Focus:* Insurance Desk (Health): \"Robotic surgery: How much will your health insurance policy actually pay?\" — Check policy sub-limits, exclusions and coverage for robotic-assisted surgery to avoid unexpected out-of-pocket expenses\n\n— BM Desk · Verified Official & Tier-1 Sources"
+    },
+    {
+      "id": "hdfc_note_2026-11-27",
+      "department": "Frontline Ops & Customer Desk",
+      "channel": "Internal PB / Teller Brief",
+      "title": "Desk Note: HDFC Bank to stop SMS alerts for UPI payments up to ₹500 from Januar…",
+      "reason": "Direct HDFC Bank development spotted in last 24h — approve to circulate uniform guidance to PBs & Tellers.",
+      "body": "*Team Desk Note — HDFC Bank Update (2026-11-27)*\nTopic: HDFC Bank to stop SMS alerts for UPI payments up to ₹500 from January 1, 2027\n\n• This means customers making UPI payments of ₹100, ₹200, ₹400 or ₹500 will not receive an SMS alert from the bank after completing the transaction.\n• However, those making payments exceeding ₹500 will continue receiving SMS notifications.\n• Under the revised framework, banks must send immediate SMS alerts for electronic banking transactions exceeding ₹500.\n\n*Action at Counters:* Immediate Desk Readiness (HDFC): Brief all PBs, Tellers & RMs on the Jan 1, 2027 ₹500 UPI SMS-alert change so customers are proactively guided to email/app alerts without confusion.\nSource: CNBC-TV18 — Personal Finance & Insurance"
+    },
+    {
+      "id": "rbi_alert_2026-11-27",
+      "department": "Compliance & Audit Desk",
+      "channel": "Branch Ops / RM Checklist",
+      "title": "Compliance Alert: Reserve Bank of India (Payment Banks - Know Your Customer) Ame…",
+      "reason": "Official RBI directive published in last 24h — review & approve to brief branch operations staff.",
+      "body": "*RBI Regulatory Watch (2026-11-27)*\nReserve Bank of India (Payment Banks - Know Your Customer) Amendment Directions, 2026\n\n• Feedback received on the above draft Directions has been examined and the consequent modifications have been suitably incorporated in the final Amendment Directions.\n• Accordingly, the Reserve Bank has today issued the following Amendment Directions, which shall come into effect from July 1, 2027, or from such earlier date as a bank may decide to implement the SOP.\n\n*Branch Ops Check:* Counter Compliance: Brief Personal Bankers & Tellers in morning huddle; verify Re-KYC and documentation completeness before closure.\nOfficial Link: https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13768&Mode=0"
+    }
+  ],
+  "sections": [
+    {
+      "id": "rbi_regulatory",
+      "title": "RBI Guidelines & Regulatory Alerts",
+      "shortTitle": "RBI & Regulatory",
+      "badge": "COMPLIANCE",
+      "description": "Circulars, KYC/AML, lending norms, audit/compliance directives, Ombudsman & regulatory penalties.",
+      "items": [
+        {
+          "id": "rbi_notifications_1",
+          "headline": "Reserve Bank of India (Payment Banks - Know Your Customer) Amendment Directions, 2026",
+          "keyPoints": [
+            "Feedback received on the above draft Directions has been examined and the consequent modifications have been suitably incorporated in the final Amendment Directions.",
+            "Accordingly, the Reserve Bank has today issued the following Amendment Directions, which shall come into effect from July 1, 2027, or from such earlier date as a bank may decide to implement the SOP."
+          ],
+          "summary": "Feedback received on the above draft Directions has been examined and the consequent modifications have been suitably incorporated in the final Amendment Directions.",
+          "branchImpact": "Counter Compliance: Brief Personal Bankers & Tellers in morning huddle; verify Re-KYC and documentation completeness before closure.",
+          "section": "rbi_regulatory",
+          "bankCategories": [
+            "PSU/Govt",
+            "Semi-Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "RBI Notifications",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13768&Mode=0",
+          "publishedAt": "2026-11-27T15:15:00.000Z",
+          "publishedIst": "27 Nov, 08:45 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "rbi_press_6",
+          "headline": "RBI Issues Amendment Directions on ‘Suspected Money Mule Accounts to Prevent Cyber-enabled Financial Frauds’",
+          "keyPoints": [
+            "The Reserve Bank had issued the draft Reserve Bank of India (Know Your Customer) Amendment Directions, 2026 on September 11, 2026, for seeking feedback from stakeholders.",
+            "Feedback received on the above draft Directions has been examined and the consequent modifications have been suitably incorporated in the final Amendment Directions.",
+            "Accordingly, the Reserve Bank has today issued the following Amendment Directions, which shall come into effect from July 1, 2027, or from such earlier date as a bank may decide to implement the SOP."
+          ],
+          "summary": "The Reserve Bank had issued the draft Reserve Bank of India (Know Your Customer) Amendment Directions, 2026 on September 11, 2026, for seeking feedback from stakeholders.",
+          "branchImpact": "Critical Ops Alert: Tighten new CASA onboarding scrutiny, high-velocity account monitoring & RM KYC checks for suspected mule indicators immediately.",
+          "section": "rbi_regulatory",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "RBI Press Releases",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64062",
+          "publishedAt": "2026-11-27T15:15:00.000Z",
+          "publishedIst": "27 Nov, 08:45 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "rbi_press_9",
+          "headline": "Thirty First Meeting of the Standing Advisory Committee (SAC) to Review the Flow of Credit to the MSME Sector in Kolkata on November 27, 2026",
+          "keyPoints": [
+            "Shri Swaminathan J, Deputy Governor, Reserve Bank of India (RBI), chaired the meeting.",
+            "Participants included the Additional Secretary and Development Commissioner, Ministry of MSME, and the Joint Secretary, Department of Financial Services, Ministry of Finance.",
+            "Managing directors and executive directors of select banks, heads of SIDBI, NABARD, CGTMSE, NCGTC and KVIC, the Chief Executive Officer of the Indian Banks’ Association, and representatives of national."
+          ],
+          "summary": "Shri Swaminathan J, Deputy Governor, Reserve Bank of India (RBI), chaired the meeting.",
+          "branchImpact": "MSME Credit Push: RBI is closely reviewing MSME credit flow—prioritize Panchkula Industrial Area working-capital & CGTMSE files.",
+          "section": "rbi_regulatory",
+          "bankCategories": [
+            "PSU/Govt",
+            "Semi-Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "RBI Press Releases",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64059",
+          "publishedAt": "2026-11-27T12:55:00.000Z",
+          "publishedIst": "27 Nov, 06:25 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "rbi_notifications_2",
+          "headline": "Reserve Bank of India (White Label ATM Operators) Directions, 2026",
+          "keyPoints": [
+            "Official RBI statutory direction issued on 27 Nov, 05:30 pm IST governing White Label ATM Operators.",
+            "Revises licensing, operational standards, cash management, and regulatory compliance for White Label ATM Operators (WLAOs)."
+          ],
+          "summary": "Official RBI statutory direction issued on 27 Nov, 05:30 pm IST governing White Label ATM Operators.",
+          "branchImpact": "Branch Ops & ATM Desk: Review ATM/POS cash withdrawal reconciliation, failed-txn TAT, and customer dispute escalation workflow.",
+          "section": "rbi_regulatory",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "RBI Notifications",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13762&Mode=0",
+          "publishedAt": "2026-11-27T12:00:00.000Z",
+          "publishedIst": "27 Nov, 05:30 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "rbi_notifications_3",
+          "headline": "Reserve Bank of India (Cash Withdrawal Transactions through Automated Teller Machines and Point of Sale Terminals) Directions, 2026",
+          "keyPoints": [
+            "Official RBI statutory direction issued on 27 Nov, 05:30 pm IST governing Cash Withdrawal Transactions through Automated Teller Machines and Point of Sale Terminals.",
+            "Updates operational directions for cash withdrawals via ATMs and POS terminals, including limits, security, and failed-transaction reconciliation."
+          ],
+          "summary": "Official RBI statutory direction issued on 27 Nov, 05:30 pm IST governing Cash Withdrawal Transactions through Automated Teller Machines and Point of Sale Terminals.",
+          "branchImpact": "Branch Ops & ATM Desk: Review ATM/POS cash withdrawal reconciliation, failed-txn TAT, and customer dispute escalation workflow.",
+          "section": "rbi_regulatory",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "RBI Notifications",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13761&Mode=0",
+          "publishedAt": "2026-11-27T12:00:00.000Z",
+          "publishedIst": "27 Nov, 05:30 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "rbi_notifications_4",
+          "headline": "Reserve Bank of India (Digital Payments – Card-based transaction) Directions, 2026",
+          "keyPoints": [
+            "RBI has consolidated 25 existing circulars on debit, credit and prepaid card transactions into a single framework.",
+            "The directions came into effect immediately on their date of issuance and apply to payment system providers and participants, including banks and non-bank entities.",
+            "It also incorporates the existing exemption from additional authentication for eligible contactless transactions of up to ₹5,000."
+          ],
+          "summary": "RBI has consolidated 25 existing circulars on debit, credit and prepaid card transactions into a single framework.",
+          "branchImpact": "Regulatory Watch: Monitor corresponding HDFC Bank internal circular before modifying frontline counter SOPs.",
+          "section": "rbi_regulatory",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "RBI Notifications",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13760&Mode=0",
+          "publishedAt": "2026-11-27T12:00:00.000Z",
+          "publishedIst": "27 Nov, 05:30 pm",
+          "withinStrict24h": true
+        }
+      ],
+      "emptyNotice": null
+    },
+    {
+      "id": "interest_rates",
+      "title": "Interest Rates & Pricing Radar",
+      "shortTitle": "Interest Rates",
+      "badge": "PRICING",
+      "description": "Repo/MCLR/RLLR revisions, FD/RD/Savings rates, Home/Auto/MSME loan rates & Govt Small Savings.",
+      "items": [
+        {
+          "id": "cnbc_pf_70",
+          "headline": "SCSS vs HDFC Senior Citizen FD: Which gives better returns on ₹10,00,000, ₹20,00,000 and ₹30,00,000?",
+          "keyPoints": [
+            "The Senior Citizens Savings Scheme offers an 8.2% annual interest rate, outperforming HDFC Bank's 7.2% senior citizen FD rate and generating higher annual returns across various investment amounts.",
+            "If you are planning to invest ₹10 lakh, ₹20 lakh or ₹30 lakh for five years, which option will generate more annual interest income?",
+            "The rate is effective from November 4, 2026."
+          ],
+          "summary": "The Senior Citizens Savings Scheme offers an 8.2% annual interest rate, outperforming HDFC Bank's 7.2% senior citizen FD rate and generating higher annual returns across various investment amounts.",
+          "branchImpact": "HDFC Pricing Action: Update RM pitch decks immediately and proactively call maturing FD / pipeline loan clients.",
+          "section": "interest_rates",
+          "bankCategories": [
+            "HDFC",
+            "Semi-Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "CNBC-TV18 — Personal Finance & Insurance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.cnbctv18.com/personal-finance/scss-vs-hdfc-senior-citizen-fd-which-gives-better-returns-on-rs-1000000-rs-2000000-and-rs-3000000-20043200.htm",
+          "publishedAt": "2026-11-27T12:16:26.000Z",
+          "publishedIst": "27 Nov, 05:46 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "cnbc_pf_67",
+          "headline": "Bank of India raises MCLR on overnight, one-month loans; revised rates effective December 1",
+          "keyPoints": [
+            "The revised rates will come into effect from December 1, 2026, the public sector lender informed stock exchanges in a regulatory filing on November 27.",
+            "Following the revision, the bank's overnight MCLR has increased from 7.85% to 8%, while its one-month MCLR has been raised from 8.15% to 8.25%.",
+            "The three-month MCLR remains at 8.45%, the six-month rate at 8.75%, the one-year rate at 8.90% and the three-year rate at 9%."
+          ],
+          "summary": "The revised rates will come into effect from December 1, 2026, the public sector lender informed stock exchanges in a regulatory filing on November 27.",
+          "branchImpact": "Loan Pipeline Opportunity: Competitor lending cost is shifting—activate balance-transfer (BT) and new sanction pitches for Panchkula salaried & MSME borrowers.",
+          "section": "interest_rates",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "CNBC-TV18 — Personal Finance & Insurance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.cnbctv18.com/personal-finance/bank-of-india-raises-mclr-on-overnight-one-month-loans-revised-rates-effective-december-1-20043333.htm",
+          "publishedAt": "2026-11-27T15:24:19.000Z",
+          "publishedIst": "27 Nov, 08:54 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "bl_money_32",
+          "headline": "RBI trims sale of 2029 bond as rising bets on hefty rate hike lift yields",
+          "keyPoints": [
+            "Reserve Bank of India accepted bids worth ₹3,680 crore in the planned ₹9,000 crore auction of the 6.20% 2029 paper",
+            "The Reserve Bank of India accepted bids worth about 40% of the size of shorter-tenor three-year bonds in an auction on Friday, managing to keep the cutoff yield below 7% handle.",
+            "The three-year or 6.20% 2029 bond yield was dealt at 6.9960% in the secondary market before the auction cutoffs, and there were no deals after the auction."
+          ],
+          "summary": "Reserve Bank of India accepted bids worth ₹3,680 crore in the planned ₹9,000 crore auction of the 6.20% 2029 paper",
+          "branchImpact": "Rate-Cycle Advisory: Prep RMs to advise FD customers on laddering/tenure strategy and guide home-loan borrowers on EMI/tenure impact.",
+          "section": "interest_rates",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "The Hindu BusinessLine — Money & Banking",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.thehindubusinessline.com/money-and-banking/rbi-trims-sale-of-2029-bond-as-rising-bets-on-hefty-rate-hike-lift-yields/article71750177.ece",
+          "publishedAt": "2026-11-27T11:47:54.000Z",
+          "publishedIst": "27 Nov, 05:17 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "bs_finance_56",
+          "headline": "Nomura raises December RBI rate hike call to 50 bps, BoB sticks to 25 bps",
+          "keyPoints": [
+            "Nomura cites a sharper-than-expected rise in food prices for its revised rate hike forecast, while Bank of Baroda expects a smaller increase amid easing geopolitical tensions",
+            "Bank of Baroda (BoB), however, expects a smaller 25 bps increase when the Monetary Policy Committee (MPC) announces its decision on December 4.",
+            "Nomura expects the repo rate to rise to 6 per cent, assigning a 60 per cent probability to a 50 bps hike and a 40 per cent chance of a 25 bps increase, which is also the consensus expectation."
+          ],
+          "summary": "Nomura cites a sharper-than-expected rise in food prices for its revised rate hike forecast, while Bank of Baroda expects a smaller increase amid easing geopolitical tensions",
+          "branchImpact": "Rate-Cycle Advisory: Prep RMs to advise FD customers on laddering/tenure strategy and guide home-loan borrowers on EMI/tenure impact.",
+          "section": "interest_rates",
+          "bankCategories": [
+            "PSU/Govt",
+            "International"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "Business Standard — Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.business-standard.com/finance/news/nomura-raises-december-rbi-rate-hike-call-to-50-bps-bob-sticks-to-25-bps-126112700852_1.html",
+          "publishedAt": "2026-11-27T11:20:53.000Z",
+          "publishedIst": "27 Nov, 04:50 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "mint_money_47",
+          "headline": "Gold price forecast: Fed rate hike in December may limit recovery to ₹1.30 lakh per 10 grams by 2026-end, says expert",
+          "keyPoints": [
+            "The Fed's next Federal Open Market Committee (FOMC) meeting is scheduled for 8-9 December 2026, with the interest rate decision expected on 9 December.",
+            "The Fed last raised interest rates by 25 basis points in September, taking the federal funds target range to 3.75%–4.00%.",
+            "At its subsequent October meeting, the FOMC kept rates unchanged at 3.75%–4.00%."
+          ],
+          "summary": "The Fed's next Federal Open Market Committee (FOMC) meeting is scheduled for 8-9 December 2026, with the interest rate decision expected on 9 December.",
+          "branchImpact": "Rate-Cycle Advisory: Prep RMs to advise FD customers on laddering/tenure strategy and guide home-loan borrowers on EMI/tenure impact.",
+          "section": "interest_rates",
+          "bankCategories": [
+            "International"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "Livemint — Money & Personal Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/money/personal-finance/gold-price-forecast-fed-rate-hike-in-december-may-limit-recovery-to-1-30-lakh-per-10-grams-by-2026-end-says-expert-11795762496058.html",
+          "publishedAt": "2026-11-27T08:13:47.000Z",
+          "publishedIst": "27 Nov, 01:43 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "cnbc_econ_25",
+          "headline": "Tokyo's core CPI hits 2.9%, strengthening case for BOJ rate hike in December",
+          "keyPoints": [
+            "Tokyo's core inflation rises to its highest level since July 2025, while the measure excluding fresh food and energy climbs 2.5%.",
+            "Tokyo's consumer prices rose at their fastest pace this year in November, strengthening the case for the Bank of Japan to raise interest rates next month as it works to keep inflation near its 2% target.",
+            "Core consumer price index in the capital, which leaves out volatile fresh food, climbed 2.9% from a year earlier, the highest since July 2025, the Ministry of Internal Affairs and Communications said on Friday."
+          ],
+          "summary": "Tokyo's core inflation rises to its highest level since July 2025, while the measure excluding fresh food and energy climbs 2.5%.",
+          "branchImpact": "Rate-Cycle Advisory: Prep RMs to advise FD customers on laddering/tenure strategy and guide home-loan borrowers on EMI/tenure impact.",
+          "section": "interest_rates",
+          "bankCategories": [
+            "International"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "CNBC-TV18 — Economy & RBI",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.cnbctv18.com/economy/japan-inflation-tokyo-core-cpi-november-2026-boj-interest-rate-hike-december-20042574.htm",
+          "publishedAt": "2026-11-27T01:49:51.000Z",
+          "publishedIst": "27 Nov, 07:19 am",
+          "withinStrict24h": true
+        }
+      ],
+      "emptyNotice": null
+    },
+    {
+      "id": "bank_policies",
+      "title": "Bank Policies, Charges & Schemes",
+      "shortTitle": "Bank Policies",
+      "badge": "PRODUCTS",
+      "description": "AMB/AQB updates, service charges, credit/debit card changes, salary/govt/current account launches.",
+      "items": [
+        {
+          "id": "cnbc_pf_68",
+          "headline": "HDFC Bank to stop SMS alerts for UPI payments up to ₹500 from January 1, 2027",
+          "keyPoints": [
+            "This means customers making UPI payments of ₹100, ₹200, ₹400 or ₹500 will not receive an SMS alert from the bank after completing the transaction.",
+            "However, those making payments exceeding ₹500 will continue receiving SMS notifications.",
+            "Under the revised framework, banks must send immediate SMS alerts for electronic banking transactions exceeding ₹500."
+          ],
+          "summary": "This means customers making UPI payments of ₹100, ₹200, ₹400 or ₹500 will not receive an SMS alert from the bank after completing the transaction.",
+          "branchImpact": "Immediate Desk Readiness (HDFC): Brief all PBs, Tellers & RMs on the Jan 1, 2027 ₹500 UPI SMS-alert change so customers are proactively guided to email/app alerts without confusion.",
+          "section": "bank_policies",
+          "bankCategories": [
+            "HDFC",
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "HIGH",
+          "source": "CNBC-TV18 — Personal Finance & Insurance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.cnbctv18.com/personal-finance/hdfc-bank-to-stop-sms-alerts-for-upi-payments-up-to-%25e2%2582%25b9500-from-january-1-2027-20043303.htm",
+          "publishedAt": "2026-11-27T13:31:58.000Z",
+          "publishedIst": "27 Nov, 07:01 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "et_banking_16",
+          "headline": "SBI to up lending under 'MSME Dream' to Rs 50 cr by March 2027",
+          "keyPoints": [
+            "The current loan cap will be raised to Rs 10 crore by November 30, 2023.",
+            "The bank will then pilot loans of Rs 50 crore under this initiative to support small businesses.",
+            "The bank will increase the per loan borrowing under the product to Rs 50 crore across all branches by March next year, the official said."
+          ],
+          "summary": "The current loan cap will be raised to Rs 10 crore by November 30, 2023.",
+          "branchImpact": "MSME Competitive Defense: Counter PSU MSME pushes across Panchkula Phase 1 & 2 with HDFC Bank's faster sanction TAT, CMS, and working-capital bundling.",
+          "section": "bank_policies",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "Economic Times — Banking & Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/sbi-plans-to-boost-msme-dream-loans-to-rs-50-crore-by-march-2027-aiming-for-faster-digital-sanctions/articleshow/136215774.cms",
+          "publishedAt": "2026-11-27T08:56:35.000Z",
+          "publishedIst": "27 Nov, 02:26 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "bs_finance_59",
+          "headline": "Axis MF launches Nifty LargeMidcap 250 Index Fund: NFO dates, key details",
+          "keyPoints": [
+            "The NFO runs from November 27 to December 11, with a minimum investment of ₹100.",
+            "The new fund offer (NFO) opens on November 27 and will remain open until December 11, 2026.",
+            "Over the 10-year period ended October 30, 2026, the Nifty LargeMidcap 250 TRI delivered a compound annual growth rate (CAGR) of 13.8 per cent, according to Axis Mutual Fund."
+          ],
+          "summary": "The NFO runs from November 27 to December 11, with a minimum investment of ₹100.",
+          "branchImpact": "Peer Intelligence: Benchmark against HDFC Bank's product suite to protect corporate salary, HNI, and current account mandates.",
+          "section": "bank_policies",
+          "bankCategories": [
+            "Private"
+          ],
+          "insuranceType": null,
+          "priority": "MEDIUM",
+          "source": "Business Standard — Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.business-standard.com/finance/personal-finance/axis-mf-launches-nifty-largemidcap-250-index-fund-nfo-dates-key-details-126112700366_1.html",
+          "publishedAt": "2026-11-27T06:14:25.000Z",
+          "publishedIst": "27 Nov, 11:44 am",
+          "withinStrict24h": true
+        },
+        {
+          "id": "mint_money_42",
+          "headline": "EPF withdrawal rules: How retirees can generate monthly income from PF interest without dipping into their savings",
+          "keyPoints": [
+            "Here's how much monthly income a ₹10-50 lakh corpus could generate.",
+            "The Employees’ Provident Fund Organisation (EPFO) has approved a new withdrawal facility that could change how salaried employees access their provident fund savings after retirement.",
+            "The proposed Systematic Withdrawal Plan (SWP), approved by the Central Board of Trustees (CBT) at its meeting on 19 November 2026."
+          ],
+          "summary": "Here's how much monthly income a ₹10-50 lakh corpus could generate.",
+          "branchImpact": "Pensioner & Retiree Desk: Use EPF payout updates as a warm conversation starter for Tricity retirees on Senior Citizen FD, SCSS & annuity planning.",
+          "section": "bank_policies",
+          "bankCategories": [
+            "Semi-Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Livemint — Money & Personal Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/money/personal-finance/epf-withdrawal-rules-how-retirees-can-generate-monthly-income-from-pf-interest-without-dipping-into-their-savings-11795790426321.html",
+          "publishedAt": "2026-11-27T15:01:57.000Z",
+          "publishedIst": "27 Nov, 08:31 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "mint_money_43",
+          "headline": "RBI consolidates 25 card payment circulars into one framework; what debit and credit card users should know",
+          "keyPoints": [
+            "RBI has consolidated 25 existing circulars on debit, credit and prepaid card transactions into a single framework.",
+            "The directions came into effect immediately on their date of issuance and apply to payment system providers and participants, including banks and non-bank entities.",
+            "It also incorporates the existing exemption from additional authentication for eligible contactless transactions of up to ₹5,000."
+          ],
+          "summary": "RBI has consolidated 25 existing circulars on debit, credit and prepaid card transactions into a single framework.",
+          "branchImpact": "Peer Intelligence: Benchmark against HDFC Bank's product suite to protect corporate salary, HNI, and current account mandates.",
+          "section": "bank_policies",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Livemint — Money & Personal Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/money/personal-finance/rbi-consolidates-25-card-payment-circulars-into-one-framework-what-debit-and-credit-card-users-should-know-11795785543520.html",
+          "publishedAt": "2026-11-27T13:43:37.000Z",
+          "publishedIst": "27 Nov, 07:13 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "bs_finance_54",
+          "headline": "Average credit card transaction size falls 13% to ₹3,585 in Oct: CareEdge",
+          "keyPoints": [
+            "Credit card spending hit a record ₹2.45 trillion in October, while the number of transactions rose 31.8 per cent year-on-year, indicating more frequent use for smaller purchases",
+            "The decline in transaction size came alongside a 31.8 per cent year-on-year (Y-o-Y) increase in the number of credit card transactions to 68.3 crore during the month.",
+            "Spending, meanwhile, grew 14.3 per cent during the month, while spending per card increased 2.9 per cent to ₹19,366, marking its first Y-o-Y rise since June 2026."
+          ],
+          "summary": "Credit card spending hit a record ₹2.45 trillion in October, while the number of transactions rose 31.8 per cent year-on-year, indicating more frequent use for smaller purchases",
+          "branchImpact": "Peer Intelligence: Benchmark against HDFC Bank's product suite to protect corporate salary, HNI, and current account mandates.",
+          "section": "bank_policies",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Business Standard — Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.business-standard.com/finance/news/average-credit-card-transaction-size-falls-13-to-3-585-in-oct-careedge-126112701053_1.html",
+          "publishedAt": "2026-11-27T12:58:36.000Z",
+          "publishedIst": "27 Nov, 06:28 pm",
+          "withinStrict24h": true
+        }
+      ],
+      "emptyNotice": null
+    },
+    {
+      "id": "insurance",
+      "title": "Insurance & Bancassurance Desk (TPP)",
+      "shortTitle": "Insurance (TPP)",
+      "badge": "LIFE · TERM · HEALTH · NON-LIFE",
+      "description": "Life, Term Plans, Health Insurance & Non-Life/General updates from IRDAI, HDFC Life, HDFC ERGO, LIC & peers.",
+      "items": [
+        {
+          "id": "bs_finance_62",
+          "headline": "Robotic surgery: How much will your health insurance policy actually pay?",
+          "keyPoints": [
+            "Check policy sub-limits, exclusions and coverage for robotic-assisted surgery to avoid unexpected out-of-pocket expenses",
+            "Cardiac surgeons at the recently held 10th annual conference of the Society of Minimally Invasive Cardiovascular and Thoracic Surgeons of India said they expect that number to rise by around 40 per cent in 2026.",
+            "With more patients set to undergo these procedures, policyholders need to check whether their health insurance covers robotic-assisted surgery."
+          ],
+          "summary": "Check policy sub-limits, exclusions and coverage for robotic-assisted surgery to avoid unexpected out-of-pocket expenses",
+          "branchImpact": "TPP Sales Hook (Health): Lead with HDFC ERGO cashless hospital network, claim transparency & family floater upgrades for walk-in and HNI clients.",
+          "section": "insurance",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": "Health",
+          "priority": "MEDIUM",
+          "source": "Business Standard — Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.business-standard.com/finance/personal-finance/robotic-surgery-how-much-will-your-health-insurance-policy-actually-pay-126112601572_1.html",
+          "publishedAt": "2026-11-26T17:19:20.000Z",
+          "publishedIst": "26 Nov, 10:49 pm",
+          "withinStrict24h": false
+        },
+        {
+          "id": "et_banking_17",
+          "headline": "Can your ULIP survive a 30% market crash? A 10-year risk and taxation analysis",
+          "keyPoints": [
+            "A ULIP plan merges life insurance with investments linked to market trends, presenting certain vulnerabilities.",
+            "It’s vital for investors to scrutinize their selection of funds and allocation strategies to achieve optimal returns.",
+            "Within that limit, and if the annual premium is also within 10% of the sum assured (for policies issued on or after 1 April 2012) and other conditions are met, they may remain tax-exempt."
+          ],
+          "summary": "A ULIP plan merges life insurance with investments linked to market trends, presenting certain vulnerabilities.",
+          "branchImpact": "Wealth & Life Pitch: Use objective ULIP vs Term+MF risk/tax framing to build long-term trust during HNI HDFC Life reviews.",
+          "section": "insurance",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": "Life",
+          "priority": "STANDARD",
+          "source": "Economic Times — Banking & Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://economictimes.indiatimes.com/industry/banking/finance/can-your-ulip-survive-a-30-market-crash-a-10-year-risk-and-taxation-analysis/articleshow/136214855.cms",
+          "publishedAt": "2026-11-27T08:29:19.000Z",
+          "publishedIst": "27 Nov, 01:59 pm",
+          "withinStrict24h": true
+        }
+      ],
+      "emptyNotice": null
+    },
+    {
+      "id": "finance_macro",
+      "title": "Finance, Payments & International Banking",
+      "shortTitle": "Finance & Global",
+      "badge": "MACRO · GLOBAL",
+      "description": "NPCI/UPI, SEBI/Mutual Funds, banking liquidity, foreign banks (HSBC/StanChart/DBS) & global central banks.",
+      "items": [
+        {
+          "id": "mint_money_39",
+          "headline": "Direct vs regular mutual funds: SIPs through distributors stay invested longer, but do higher costs eat into returns?",
+          "keyPoints": [
+            "SIP investments in regular mutual fund plans stay invested longer than those in direct plans, a Wealthy–Monitor Deloitte study found.",
+            "In comparison, the corresponding share for direct plans was 19.9%, a difference of 14.5 percentage points.",
+            "Across all mutual fund investments, 23.5% of assets in regular plans had remained invested for more than five years, compared with around 14% in direct plans."
+          ],
+          "summary": "SIP investments in regular mutual fund plans stay invested longer than those in direct plans, a Wealthy–Monitor Deloitte study found.",
+          "branchImpact": "Liquidity & Macro Context: Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Livemint — Money & Personal Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/money/personal-finance/direct-vs-regular-mutual-funds-sips-through-distributors-stay-invested-longer-but-do-higher-costs-eat-into-returns-11795800153602.html",
+          "publishedAt": "2026-11-27T17:59:56.000Z",
+          "publishedIst": "27 Nov, 11:29 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "mint_money_40",
+          "headline": "₹1.5 crore retirement corpus: How much monthly pension can you withdraw to make it last 20 years?",
+          "keyPoints": [
+            "Withdrawing ₹1.5 lakh every month could exhaust retirement savings in just 10 years; a lower starting withdrawal may be necessary to beat inflation and sustain income",
+            "If the initial monthly withdrawal is reduced to ₹90,000, the savings would last approximately 15 years.",
+            "Similarly, starting with a lower withdrawal amount of ₹1 lakh may not adequately address the impact of inflation over two decades."
+          ],
+          "summary": "Withdrawing ₹1.5 lakh every month could exhaust retirement savings in just 10 years; a lower starting withdrawal may be necessary to beat inflation and sustain income",
+          "branchImpact": "Liquidity & Macro Context: Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Livemint — Money & Personal Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/money/personal-finance/rs-1-5-crore-retirement-corpus-how-much-monthly-pension-can-you-withdraw-to-make-it-last-20-years-11795799542687.html",
+          "publishedAt": "2026-11-27T17:33:46.000Z",
+          "publishedIst": "27 Nov, 11:03 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "mint_money_41",
+          "headline": "EPFO's Nidhi Aapke Nikat 2.0 camps: How to check your nearest venue, services available and documents required",
+          "keyPoints": [
+            "The EPFO has arranged multiple camps in major cities to manage the expected number of visitors.",
+            "Seven regional offices are holding separate sessions across Bengaluru, while five camps are being organised under the Mumbai-I zone.",
+            "The Employees' Provident Fund Organisation (EPFO) is conducting a Nidhi Aapke Nikat awareness campaign across India."
+          ],
+          "summary": "The EPFO has arranged multiple camps in major cities to manage the expected number of visitors.",
+          "branchImpact": "Liquidity & Macro Context: Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "Semi-Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Livemint — Money & Personal Finance",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/money/personal-finance/epfos-nidhi-aapke-nikat-2-0-camps-how-to-check-your-nearest-venue-services-available-and-documents-required-11795797566466.html",
+          "publishedAt": "2026-11-27T17:19:58.000Z",
+          "publishedIst": "27 Nov, 10:49 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "bl_money_27",
+          "headline": "Indian Bank gets nod to raise ₹2,500 cr through AT1 bonds",
+          "keyPoints": [
+            "This will be through issuance of Basel III compliant AT1 Bonds",
+            "Indian Bank said has informed exchanges that the committee of directors (capital raising) of the bank in its meeting held on Friday have approved raising capital via AT1 bonds aggregating up to ₹2,500 crore.",
+            "2026-27 based on the requirement, the PSU lender added."
+          ],
+          "summary": "This will be through issuance of Basel III compliant AT1 Bonds",
+          "branchImpact": "Liquidity & Macro Context: Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "The Hindu BusinessLine — Money & Banking",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.thehindubusinessline.com/money-and-banking/indian-bank-gets-nod-to-raise-2500-cr-through-at1-bonds/article71751878.ece",
+          "publishedAt": "2026-11-27T15:37:59.000Z",
+          "publishedIst": "27 Nov, 09:07 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "bl_money_29",
+          "headline": "MSME loans pose bigger risk than gold loans amid pockets of stress, says Shriram Finance CFO",
+          "keyPoints": [
+            "Speaking at the India Debt Capital Market Summit 2026, Sharma said gold loans are relatively insulated from price volatility because of their small ticket size and strong borrower incentives to reclaim pledged jewel…",
+            "Concerns over falling gold prices are manageable for lenders, but stress in certain MSME segments warrants closer attention, according to Parag Sharma, Chief Financial Officer of Shriram Finance.",
+            "MSME loan risks overshadow gold loans, with localized stress and liquidity concerns highlighted at the India Debt Capital Market Summit 2026."
+          ],
+          "summary": "Speaking at the India Debt Capital Market Summit 2026, Sharma said gold loans are relatively insulated from price volatility because of their small ticket size and strong borrower incentives to reclaim pledged jewel…",
+          "branchImpact": "Liquidity & Macro Context: Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "The Hindu BusinessLine — Money & Banking",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.thehindubusinessline.com/money-and-banking/msme-loans-pose-bigger-risk-than-gold-loans-amid-pockets-of-stress-says-shriram-finance-cfo/article71751651.ece",
+          "publishedAt": "2026-11-27T15:12:51.000Z",
+          "publishedIst": "27 Nov, 08:42 pm",
+          "withinStrict24h": true
+        },
+        {
+          "id": "rbi_press_7",
+          "headline": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 30, 2026",
+          "keyPoints": [
+            "The operational guidelines for the auction will be same as given in Reserve Bank’s Press Release 2021-2022/1572 dated January 20, 2022."
+          ],
+          "summary": "The operational guidelines for the auction will be same as given in Reserve Bank’s Press Release 2021-2022/1572 dated January 20, 2022.",
+          "branchImpact": "Liquidity & Macro Context: Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "RBI Press Releases",
+          "sourceTier": "Official Regulator",
+          "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64061",
+          "publishedAt": "2026-11-27T14:15:00.000Z",
+          "publishedIst": "27 Nov, 07:45 pm",
+          "withinStrict24h": true
+        }
+      ],
+      "emptyNotice": null
+    }
+  ],
+  "sourceHealth": [
+    {
+      "id": "cnbc_pf",
+      "name": "CNBC-TV18 — Personal Finance & Insurance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 200,
+      "verified24h": 14,
+      "ms": 628
+    },
+    {
+      "id": "bl_money",
+      "name": "The Hindu BusinessLine — Money & Banking",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 60,
+      "verified24h": 12,
+      "ms": 561
+    },
+    {
+      "id": "mint_money",
+      "name": "Livemint — Money & Personal Finance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 35,
+      "verified24h": 12,
+      "ms": 567
+    },
+    {
+      "id": "bs_finance",
+      "name": "Business Standard — Finance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 35,
+      "verified24h": 11,
+      "ms": 589
+    },
+    {
+      "id": "rbi_press",
+      "name": "RBI Press Releases",
+      "tier": "Official Regulator",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 10,
+      "verified24h": 8,
+      "ms": 458
+    },
+    {
+      "id": "et_banking",
+      "name": "Economic Times — Banking & Finance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 50,
+      "verified24h": 7,
+      "ms": 402
+    },
+    {
+      "id": "rbi_notifications",
+      "name": "RBI Notifications",
+      "tier": "Official Regulator",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 10,
+      "verified24h": 5,
+      "ms": 366
+    },
+    {
+      "id": "cnbc_econ",
+      "name": "CNBC-TV18 — Economy & RBI",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 200,
+      "verified24h": 5,
+      "ms": 537
+    },
+    {
+      "id": "cnbc_finance",
+      "name": "CNBC-TV18 — Finance & Banking",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 200,
+      "verified24h": 4,
+      "ms": 618
+    },
+    {
+      "id": "ndtv_profit",
+      "name": "NDTV Profit — Markets & Banking",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 20,
+      "verified24h": 3,
+      "ms": 888
+    },
+    {
+      "id": "bs_banking",
+      "name": "Business Standard — Banking",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 35,
+      "verified24h": 1,
+      "ms": 517
+    },
+    {
+      "id": "mint_economy",
+      "name": "Livemint — Economy & Policy",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 35,
+      "verified24h": 1,
+      "ms": 573
+    },
+    {
+      "id": "cnbc_global",
+      "name": "CNBC Global — Central Banks & Intl Finance",
+      "tier": "International Trusted Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 30,
+      "verified24h": 1,
+      "ms": 1887
+    },
+    {
+      "id": "sebi_official",
+      "name": "SEBI Official Releases",
+      "tier": "Official Regulator",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 30,
+      "verified24h": 0,
+      "ms": 496
+    },
+    {
+      "id": "bs_insurance",
+      "name": "Business Standard — Insurance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 16,
+      "verified24h": 0,
+      "ms": 509
+    },
+    {
+      "id": "mc_business",
+      "name": "Moneycontrol — Business & BFSI",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 15,
+      "verified24h": 0,
+      "ms": 576
+    },
+    {
+      "id": "mint_insurance",
+      "name": "Livemint — Insurance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 35,
+      "verified24h": 0,
+      "ms": 627
+    },
+    {
+      "id": "pib_india",
+      "name": "PIB (Govt of India)",
+      "tier": "Official Government",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 20,
+      "verified24h": 0,
+      "ms": 705
+    }
+  ]
+}

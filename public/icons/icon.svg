@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="BM Intel">
+  <rect width="512" height="512" rx="112" fill="#FFF5E6"/>
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="#FFFFFF" stroke="#E5D8C3" stroke-width="6"/>
+  <rect x="64" y="64" width="248" height="248" rx="44" fill="#FAD4C0"/>
+  <rect x="332" y="64" width="116" height="116" rx="30" fill="#80A1C1"/>
+  <rect x="332" y="200" width="116" height="112" rx="30" fill="#111827"/>
+  <rect x="64" y="332" width="384" height="116" rx="32" fill="#FFF5E6" stroke="#E5D8C3" stroke-width="5"/>
+  <text x="188" y="220" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="800" font-size="112" fill="#111827">BM</text>
+  <circle cx="390" cy="122" r="18" fill="#FFFFFF"/>
+  <rect x="364" y="248" width="52" height="16" rx="8" fill="#FAD4C0"/>
+  <text x="256" y="405" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-weight="700" font-size="40" fill="#111827">INTEL 20:00</text>
+</svg>
