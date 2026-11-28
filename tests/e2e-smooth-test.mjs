@@ -17,7 +17,7 @@ import path from "node:path";
 import os from "node:os";
 import assert from "node:assert/strict";
 
-const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=15";
+const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=16";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function findBrowser() {

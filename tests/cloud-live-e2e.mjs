@@ -214,9 +214,12 @@ async function runCloudE2E() {
       cards: document.querySelectorAll('#sectionsContainer .intel-card').length,
       stuck: document.getElementById('briefFilterDock').classList.contains('is-stuck'),
       editionSubline: document.getElementById('editionSubline')?.textContent,
+      maxCardRight: Math.round(Math.max(...Array.from(document.querySelectorAll('#sectionsContainer .intel-card')).map((el) => el.getBoundingClientRect().right))),
+      innerWidth: window.innerWidth,
     })`);
     assert.ok(stickyOk.cards >= 10, `Expected >=10 cloud brief cards, got ${stickyOk.cards}`);
     assert.equal(stickyOk.stuck, true, "Sticky filter dock did not pin on live cloud Brief tab");
+    assert.ok(stickyOk.maxCardRight <= stickyOk.innerWidth, `Cloud brief card clipped right edge: ${stickyOk.maxCardRight} > ${stickyOk.innerWidth}`);
     console.log(`✔ Live Cloud Brief (${stickyOk.cards} cards) + Sticky Filter Dock smooth (${stickyOk.editionSubline})`);
 
     // Test Approvals Tab Auto-Renewed Drafts & Sync Stamp on live cloud URL

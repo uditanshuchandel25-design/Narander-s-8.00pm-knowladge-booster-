@@ -601,9 +601,9 @@ function updateStickyActiveBadge() {
 
 function getStickyOffsetPx() {
   const topbar = document.querySelector(".topbar");
-  const dock = document.getElementById("briefFilterDock");
+  const wrap = document.getElementById("briefStickyWrap") || document.getElementById("briefFilterDock");
   const topbarH = topbar ? Math.round(topbar.getBoundingClientRect().height) : 63;
-  const dockH = dock ? Math.round(dock.getBoundingClientRect().height) : 112;
+  const dockH = wrap ? Math.round(wrap.getBoundingClientRect().height) : 118;
   return { topbarH, dockH, total: topbarH + dockH };
 }
 

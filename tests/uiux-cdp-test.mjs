@@ -16,7 +16,7 @@ import path from "node:path";
 import os from "node:os";
 import assert from "node:assert/strict";
 
-const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=15";
+const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=16";
 const OUT_DIR = process.env.BM_SCREENSHOT_DIR || path.join(os.tmpdir(), "bm-intel-uiux-shots");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -220,6 +220,8 @@ async function run() {
       speakBtns: document.querySelectorAll('#sectionsContainer .speak-card-btn').length,
       suppressedVisible: !document.getElementById('suppressedDrawer').classList.contains('hidden'),
       overflowX: document.documentElement.scrollWidth > window.innerWidth,
+      maxCardRight: Math.round(Math.max(...Array.from(document.querySelectorAll('#sectionsContainer .intel-card')).map((el) => el.getBoundingClientRect().right))),
+      innerWidth: window.innerWidth,
     }))()`);
     console.log("[UI/UX Test] Brief Tab check:", briefCheck);
     assert.ok(briefCheck.cards >= 10);
@@ -228,6 +230,7 @@ async function run() {
     assert.equal(briefCheck.speakBtns, 0);
     assert.equal(briefCheck.suppressedVisible, true);
     assert.equal(briefCheck.overflowX, false);
+    assert.ok(briefCheck.maxCardRight <= briefCheck.innerWidth, `Brief intel-card clipped off right edge: ${briefCheck.maxCardRight} > ${briefCheck.innerWidth}`);
     const s3 = await cdp.screenshot("03-brief-tab.png");
     console.log("[UI/UX Test] Saved:", s3);
 
@@ -250,11 +253,11 @@ async function run() {
     await sleep(300);
     const stickyScrolledState = await cdp.eval(`(() => {
       const topbar = document.querySelector('.topbar').getBoundingClientRect();
-      const dock = document.getElementById('briefFilterDock').getBoundingClientRect();
+      const wrap = document.getElementById('briefStickyWrap').getBoundingClientRect();
       return {
         scrollY: Math.round(window.scrollY),
         isStuck: document.getElementById('briefFilterDock').classList.contains('is-stuck'),
-        dockTop: Math.round(dock.top),
+        dockTop: Math.round(wrap.top),
         topbarBottom: Math.round(topbar.bottom),
         badgeVisible: !document.getElementById('stickyActiveBadge').classList.contains('hidden'),
       };
