@@ -907,59 +907,75 @@ export async function runIntelFetch() {
 
   const referenceNowMs = serverNowCandidates.length > 0 ? Math.max(...serverNowCandidates) : Date.now();
   const referenceNow = new Date(referenceNowMs);
+  const feedsOnlineCount = feedHealth.filter((f) => f.status === "OK").length;
+  if (feedsOnlineCount < 3) {
+    throw new Error(`Aborting edition overwrite: only ${feedsOnlineCount}/${feedHealth.length} feeds reachable (transient network outage).`);
+  }
+
   const window24hMs = 24 * 60 * 60 * 1000;
   const effectiveWindowMs = 26 * 60 * 60 * 1000;
 
   const healthById = Object.fromEntries(feedHealth.map((h) => [h.id, h]));
-  const accepted = [];
-  const tokenIndex = [];
 
-  for (const raw of rawCollected) {
-    const pubDateObj = parseDateSafe(raw.pubDate);
-    if (!pubDateObj) continue;
+  function collectWithinWindow(maxAgeMs) {
+    const out = [];
+    const tokensSeen = [];
+    for (const h of feedHealth) h.verified24h = 0;
 
-    const ageMs = referenceNowMs - pubDateObj.getTime();
-    if (ageMs < -6 * 3600 * 1000 || ageMs > effectiveWindowMs) continue;
+    for (const raw of rawCollected) {
+      const pubDateObj = parseDateSafe(raw.pubDate);
+      if (!pubDateObj) continue;
 
-    const title = (raw.title || "").trim();
-    if (!title || title.length < 18) continue;
+      const ageMs = referenceNowMs - pubDateObj.getTime();
+      if (ageMs < -6 * 3600 * 1000 || ageMs > maxAgeMs) continue;
 
-    const combinedText = `${title} ${raw.description || ""}`;
-    if (raw.feed.requireBfsiFilter && !isBfsiRelevant(combinedText)) continue;
-    if (NOISE_EXCLUDE_RE.test(combinedText)) continue;
+      const title = (raw.title || "").trim();
+      if (!title || title.length < 18) continue;
 
-    const tokens = normalizeForDedup(title);
-    if (tokenIndex.some((existing) => isDuplicate(tokens, existing))) continue;
-    tokenIndex.push(tokens);
+      const combinedText = `${title} ${raw.description || ""}`;
+      if (raw.feed.requireBfsiFilter && !isBfsiRelevant(combinedText)) continue;
+      if (NOISE_EXCLUDE_RE.test(combinedText)) continue;
 
-    const section = classifySection(combinedText, raw.feed);
-    const bankCategories = detectBankCategories(combinedText);
-    const insuranceType = section === "insurance" ? detectInsuranceSubType(combinedText) : null;
-    const priority = computePriority(combinedText, section, bankCategories, raw.feed);
-    const branchImpact = buildBranchImpact(combinedText, section, bankCategories, insuranceType);
+      const tokens = normalizeForDedup(title);
+      if (tokensSeen.some((existing) => isDuplicate(tokens, existing))) continue;
+      tokensSeen.push(tokens);
 
-    if (healthById[raw.feed.id]) {
-      healthById[raw.feed.id].verified24h += 1;
+      const section = classifySection(combinedText, raw.feed);
+      const bankCategories = detectBankCategories(combinedText);
+      const insuranceType = section === "insurance" ? detectInsuranceSubType(combinedText) : null;
+      const priority = computePriority(combinedText, section, bankCategories, raw.feed);
+      const branchImpact = buildBranchImpact(combinedText, section, bankCategories, insuranceType);
+
+      if (healthById[raw.feed.id]) {
+        healthById[raw.feed.id].verified24h += 1;
+      }
+
+      out.push({
+        id: `${raw.feed.id}_${out.length + 1}`,
+        headline: title,
+        _rssDescription: raw.description || "",
+        keyPoints: [],
+        summary: "",
+        branchImpact,
+        section,
+        bankCategories,
+        insuranceType,
+        priority,
+        source: raw.feed.name,
+        sourceTier: raw.feed.tier,
+        url: raw.link,
+        publishedAt: pubDateObj.toISOString(),
+        publishedIst: formatIstShortTime(pubDateObj),
+        withinStrict24h: ageMs <= window24hMs,
+      });
     }
+    return out;
+  }
 
-    accepted.push({
-      id: `${raw.feed.id}_${accepted.length + 1}`,
-      headline: title,
-      _rssDescription: raw.description || "",
-      keyPoints: [],
-      summary: "",
-      branchImpact,
-      section,
-      bankCategories,
-      insuranceType,
-      priority,
-      source: raw.feed.name,
-      sourceTier: raw.feed.tier,
-      url: raw.link,
-      publishedAt: pubDateObj.toISOString(),
-      publishedIst: formatIstShortTime(pubDateObj),
-      withinStrict24h: ageMs <= window24hMs,
-    });
+  let accepted = collectWithinWindow(effectiveWindowMs);
+  // Sunday / Bank Holiday safety net: if strict 26h yields < 8 items, widen smoothly to 48h
+  if (accepted.length < 8) {
+    accepted = collectWithinWindow(48 * 60 * 60 * 1000);
   }
 
   const prioRank = { HIGH: 3, MEDIUM: 2, STANDARD: 1 };

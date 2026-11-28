@@ -93,19 +93,28 @@ function updateDynamicGreeting() {
 
 // --- Data Layer ---
 let lastCloudLoadMs = 0;
+const IS_STATIC_CLOUD_HOST = /\.(github\.io|netlify\.app|pages\.dev|vercel\.app)$/i.test(window.location.hostname);
 
 async function fetchJsonWithFallback(apiPath, staticPath) {
-  try {
-    const res = await fetch(apiPath, { cache: "no-store" });
-    const ct = res.headers.get("content-type") || "";
-    if (res.ok && ct.includes("json")) return { data: await res.json(), via: "api" };
-  } catch {
-    // Fallback to static
+  if (!IS_STATIC_CLOUD_HOST) {
+    try {
+      const res = await fetch(apiPath, { cache: "no-store" });
+      const ct = res.headers.get("content-type") || "";
+      if (res.ok && ct.includes("json")) return { data: await res.json(), via: "api" };
+    } catch {
+      // Fallback to static
+    }
   }
   const sep = staticPath.includes("?") ? "&" : "?";
   const res2 = await fetch(`${staticPath}${sep}t=${Date.now()}`, { cache: "no-store" });
   if (!res2.ok) throw new Error(`HTTP ${res2.status}`);
   return { data: await res2.json(), via: "static" };
+}
+
+function formatShortUpdatedLabel(edition) {
+  const raw = edition?.editionLabel || "";
+  const timeMatch = raw.match(/(\d{1,2}:\d{2}\s*(?:am|pm)\s*IST)/i);
+  return timeMatch ? timeMatch[1].toUpperCase() : "20:00 IST";
 }
 
 async function loadInitialData() {
@@ -123,11 +132,14 @@ async function loadInitialData() {
     state.editionsIndex = indexRes.data.editions || [];
 
     await loadAuditLog();
-    loadServerStatus();
+    if (state.serverMode === "local-live") {
+      loadServerStatus();
+    }
     renderAll();
 
     const s = state.activeEdition.stats || {};
-    setRunningTask(false, `${s.feedsOnline || 18}/${s.feedsTotal || 18} live · Next 20:00 IST`, 100);
+    const updatedShort = formatShortUpdatedLabel(state.activeEdition);
+    setRunningTask(false, `${s.feedsOnline || 18}/${s.feedsTotal || 18} live · ${updatedShort}`, 100);
     setTimeout(() => {
       const bar = document.getElementById("liveProgressBar");
       if (bar) bar.style.transform = "scaleX(0)";
@@ -1073,7 +1085,7 @@ async function performSearch(query) {
     const datesToScan = (state.editionsIndex || []).slice(0, 14).map((e) => e.editionDate);
     for (const dateKey of datesToScan) {
       try {
-        const res = await fetch(`./data/editions/${dateKey}.json`);
+        const res = await fetch(`./data/editions/${dateKey}.json?t=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) continue;
         const ed = await res.json();
         for (const sec of ed.sections || []) {

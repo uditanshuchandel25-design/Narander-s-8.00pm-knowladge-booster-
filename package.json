@@ -10,7 +10,8 @@
     "test:ui": "node tests/uiux-cdp-test.mjs",
     "test:agents": "node tests/agent-bench.mjs",
     "test:e2e": "node tests/e2e-smooth-test.mjs",
-    "test:all": "node tests/run-tests.mjs && node tests/agent-bench.mjs && node tests/uiux-cdp-test.mjs && node tests/e2e-smooth-test.mjs"
+    "test:cloud": "node tests/cloud-live-e2e.mjs",
+    "test:all": "node tests/run-tests.mjs && node tests/agent-bench.mjs && node tests/uiux-cdp-test.mjs && node tests/e2e-smooth-test.mjs && node tests/cloud-live-e2e.mjs"
   },
   "engines": {
     "node": ">=20.0.0"

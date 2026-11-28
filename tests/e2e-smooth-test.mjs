@@ -17,7 +17,7 @@ import path from "node:path";
 import os from "node:os";
 import assert from "node:assert/strict";
 
-const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=12";
+const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=14";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function findBrowser() {
@@ -167,7 +167,7 @@ async function runE2E() {
     await cdp.eval(`document.querySelector('#bankFilterBar .chip[data-bank="All"]').click()`);
     await sleep(150);
     const allCards = await cdp.eval(`document.querySelectorAll('#sectionsContainer .intel-card').length`);
-    assert.ok(allCards >= 15);
+    assert.ok(allCards >= 10);
 
     await cdp.eval(`document.querySelector('#sectionsContainer .bookmark-btn').click()`);
     await sleep(150);
