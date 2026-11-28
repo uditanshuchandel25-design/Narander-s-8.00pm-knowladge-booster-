@@ -16,7 +16,7 @@ import path from "node:path";
 import os from "node:os";
 import assert from "node:assert/strict";
 
-const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=17";
+const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=18";
 const OUT_DIR = process.env.BM_SCREENSHOT_DIR || path.join(os.tmpdir(), "bm-intel-uiux-shots");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -156,6 +156,7 @@ async function run() {
       innerWidth: window.innerWidth,
       hasVoiceOrb: Boolean(document.getElementById('agentOrbCanvas')),
       hasVoiceBtn: Boolean(document.getElementById('askWhatToReadBtn')),
+      hasPinCard: Boolean(document.getElementById('newPinInput') || document.getElementById('pinOverlay')),
       hasAmbientOrbs: document.querySelectorAll('.ambient-orb').length,
       iconButtonsMissingLabel: Array.from(document.querySelectorAll('.icon-btn, .btn-send')).filter((b) => !b.getAttribute('aria-label')).length,
       attentionRowsCount: document.querySelectorAll('#attentionRows .attention-row').length,
@@ -171,6 +172,7 @@ async function run() {
     assert.equal(layoutMetrics.overflowX, false, `Horizontal overflow detected: ${layoutMetrics.scrollWidth} > ${layoutMetrics.innerWidth}`);
     assert.equal(layoutMetrics.hasVoiceOrb, false, "Voice orb should be removed!");
     assert.equal(layoutMetrics.hasVoiceBtn, false, "Voice speaker button should be removed!");
+    assert.equal(layoutMetrics.hasPinCard, false, "Phone Install & PIN Lock card should be removed!");
     assert.equal(layoutMetrics.hasAmbientOrbs, 0, "Ambient glow orbs should be removed per ui-skills!");
     assert.equal(layoutMetrics.iconButtonsMissingLabel, 0, "All icon-only buttons must have aria-label!");
     assert.equal(layoutMetrics.attentionRowsCount, 4, `Expected 4 attention bento tiles, got ${layoutMetrics.attentionRowsCount}`);

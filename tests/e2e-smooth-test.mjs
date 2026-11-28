@@ -17,7 +17,7 @@ import path from "node:path";
 import os from "node:os";
 import assert from "node:assert/strict";
 
-const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=17";
+const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=18";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function findBrowser() {
@@ -244,40 +244,10 @@ async function runE2E() {
       console.log(`✔ Archive Search (${searchCount} RBI matches) smooth`);
     }
 
-    // 6. 4-Digit Personal PIN Lock Full Cycle (Enable -> Reload -> Wrong PIN -> Right PIN -> Remove)
-    await cdp.eval(`document.querySelector('.dock-btn[data-tab="system"]').click()`);
-    await sleep(150);
-    await cdp.eval(`(() => {
-      document.getElementById('newPinInput').value = '2026';
-      document.getElementById('savePinBtn').click();
-    })()`);
-    await sleep(200);
-    await cdp.send("Page.reload", { ignoreCache: true });
-    await sleep(1400);
-
-    const locked = await cdp.eval(`!document.getElementById('pinOverlay').classList.contains('hidden')`);
-    assert.equal(locked, true, "PIN overlay did not lock on reload");
-
-    await cdp.eval(`(() => {
-      document.getElementById('pinInput').value = '1111';
-      document.getElementById('pinUnlockBtn').click();
-    })()`);
-    await sleep(100);
-    const wrongErr = await cdp.eval(`document.getElementById('pinError').textContent`);
-    assert.match(wrongErr, /Incorrect/i);
-
-    await cdp.eval(`(() => {
-      document.getElementById('pinInput').value = '2026';
-      document.getElementById('pinUnlockBtn').click();
-    })()`);
-    await sleep(150);
-    const unlocked = await cdp.eval(`document.getElementById('pinOverlay').classList.contains('hidden')`);
-    assert.equal(unlocked, true, "Correct PIN failed to unlock");
-
-    await cdp.eval(`document.querySelector('.dock-btn[data-tab="system"]').click()`);
-    await sleep(100);
-    await cdp.eval(`document.getElementById('removePinBtn').click()`);
-    console.log("✔ 4-Digit Personal PIN Lock cycle (Enable → Lock → Reject Wrong → Unlock → Remove) smooth");
+    // 6. Verify Phone Install / PIN Setup card stays cleanly removed
+    const hasInstallOrPin = await cdp.eval(`Boolean(document.getElementById('newPinInput') || document.getElementById('pinOverlay'))`);
+    assert.equal(hasInstallOrPin, false, "Phone Install & PIN card should remain removed");
+    console.log("✔ System tab clean (Phone Install & PIN Lock card removed)");
 
     // 7. Live Sync Button End-to-End Test
     const syncStart = performance.now();

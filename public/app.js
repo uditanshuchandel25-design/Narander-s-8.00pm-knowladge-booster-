@@ -14,7 +14,6 @@ const BOOKMARK_KEY = "bm_intel_bookmarks_v1";
 const APPROVAL_STATE_KEY = "bm_intel_approval_states_v1";
 const CUSTOM_DRAFTS_KEY = "bm_intel_custom_drafts_v1";
 const THEME_KEY = "bm_intel_theme_v3";
-const PIN_KEY = "bm_intel_pin_v1";
 const LAYOUT_KEY = "bm_intel_layout_v1";
 
 const state = {
@@ -132,9 +131,6 @@ async function loadInitialData() {
     state.editionsIndex = indexRes.data.editions || [];
 
     await loadAuditLog();
-    if (state.serverMode === "local-live") {
-      loadServerStatus();
-    }
     renderAll();
 
     const s = state.activeEdition.stats || {};
@@ -187,24 +183,6 @@ async function logAuditAction(action, department, detail) {
     } catch {
       // ignore
     }
-  }
-}
-
-async function loadServerStatus() {
-  try {
-    const res = await fetch("./api/status", { cache: "no-store" });
-    if (!res.ok) return;
-    const status = await res.json();
-    const lanBox = document.getElementById("lanUrlsBox");
-    if (status.lanUrls && status.lanUrls.length > 0) {
-      lanBox.classList.remove("hidden");
-      lanBox.innerHTML = `
-        <div><strong>Open Directly on Android &amp; iPhone (Same Wi-Fi):</strong></div>
-        ${status.lanUrls.map((u) => `<div><code>${esc(u)}</code></div>`).join("")}
-      `;
-    }
-  } catch {
-    // static cloud
   }
 }
 
@@ -1296,58 +1274,6 @@ function initThemeAndLayout() {
   });
 }
 
-function initPinLock() {
-  const savedPin = localStorage.getItem(PIN_KEY);
-  const overlay = document.getElementById("pinOverlay");
-  const removeBtn = document.getElementById("removePinBtn");
-  const statusMsg = document.getElementById("pinSetupMsg");
-
-  if (savedPin) {
-    removeBtn.classList.remove("hidden");
-    statusMsg.textContent = "4-digit PIN lock is active on this device.";
-    overlay.classList.remove("hidden");
-    overlay.setAttribute("aria-hidden", "false");
-    setTimeout(() => document.getElementById("pinInput")?.focus(), 40);
-  }
-
-  const attemptUnlock = () => {
-    const entered = document.getElementById("pinInput").value.trim();
-    if (entered === localStorage.getItem(PIN_KEY)) {
-      overlay.classList.add("hidden");
-      overlay.setAttribute("aria-hidden", "true");
-      document.getElementById("pinInput").value = "";
-      document.getElementById("pinError").textContent = "";
-    } else {
-      document.getElementById("pinError").textContent = "Incorrect 4-digit PIN.";
-    }
-  };
-
-  document.getElementById("pinUnlockBtn").addEventListener("click", attemptUnlock);
-  document.getElementById("pinInput").addEventListener("keydown", (e) => {
-    if (e.key === "Enter") attemptUnlock();
-  });
-
-  document.getElementById("savePinBtn").addEventListener("click", () => {
-    const val = document.getElementById("newPinInput").value.trim();
-    if (!/^\d{4}$/.test(val)) {
-      statusMsg.textContent = "Please enter exactly 4 digits.";
-      return;
-    }
-    localStorage.setItem(PIN_KEY, val);
-    document.getElementById("newPinInput").value = "";
-    removeBtn.classList.remove("hidden");
-    statusMsg.textContent = "4-digit PIN enabled for this device.";
-    showToast("Personal PIN enabled");
-  });
-
-  removeBtn.addEventListener("click", () => {
-    localStorage.removeItem(PIN_KEY);
-    removeBtn.classList.add("hidden");
-    statusMsg.textContent = "PIN lock removed.";
-    showToast("Personal PIN removed");
-  });
-}
-
 function initEvents() {
   document.querySelectorAll(".dock-btn").forEach((btn) => {
     btn.addEventListener("click", () => switchTab(btn.dataset.tab));
@@ -1423,38 +1349,6 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-// Native Android Chrome / Edge 1-Tap PWA Install Prompt
-let deferredInstallPrompt = null;
-
-function initPwaInstall() {
-  const banner = document.getElementById("pwaInstallBanner");
-  const btn = document.getElementById("installAppBtn");
-  if (!banner || !btn) return;
-
-  window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    deferredInstallPrompt = e;
-    banner.classList.remove("hidden");
-  });
-
-  btn.addEventListener("click", async () => {
-    if (!deferredInstallPrompt) return;
-    deferredInstallPrompt.prompt();
-    const { outcome } = await deferredInstallPrompt.userChoice;
-    deferredInstallPrompt = null;
-    if (outcome === "accepted") {
-      banner.classList.add("hidden");
-      showToast("Installing BM Intel on your Home Screen…");
-    }
-  });
-
-  window.addEventListener("appinstalled", () => {
-    deferredInstallPrompt = null;
-    banner.classList.add("hidden");
-    showToast("BM Intel installed as an app!");
-  });
-}
-
 // Auto-refresh when returning to the installed phone app after 10+ minutes
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "visible" && Date.now() - lastCloudLoadMs > 10 * 60 * 1000) {
@@ -1464,9 +1358,7 @@ document.addEventListener("visibilitychange", () => {
 
 // Boot
 initThemeAndLayout();
-initPinLock();
 initEvents();
-initPwaInstall();
 syncStickyOffsets();
 window.addEventListener("resize", () => syncStickyOffsets(), { passive: true });
 updateCountdown();

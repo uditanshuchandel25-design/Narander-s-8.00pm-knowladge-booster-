@@ -25,39 +25,9 @@
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icons/bm-logo-192.png?v=12" type="image/png" />
   <link rel="apple-touch-icon" href="./icons/bm-logo.png?v=12" />
-  <link rel="stylesheet" href="./styles.css?v=17" />
+  <link rel="stylesheet" href="./styles.css?v=18" />
 </head>
 <body>
-  <!-- Optional Personal PIN Lock Overlay -->
-  <div
-    id="pinOverlay"
-    class="pin-overlay hidden"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="pinDialogTitle"
-    aria-hidden="true"
-  >
-    <div class="bento-card pin-card">
-      <div class="pin-logo-frame">
-        <img src="./icons/bm-logo-192.png?v=12" alt="BM Intel" width="76" height="76" />
-      </div>
-      <div class="bento-eyebrow pin-brand">BM INTEL · PANCHKULA</div>
-      <h2 id="pinDialogTitle">Executive Desk Lock</h2>
-      <p>Enter your 4-digit personal PIN to access today's briefing &amp; approvals.</p>
-      <input
-        id="pinInput"
-        type="password"
-        inputmode="numeric"
-        maxlength="4"
-        placeholder="••••"
-        autocomplete="off"
-        aria-label="4-digit personal PIN"
-      />
-      <div id="pinError" class="pin-error" role="alert"></div>
-      <button id="pinUnlockBtn" type="button" class="btn-primary full-width">Unlock Command Centre</button>
-    </div>
-  </div>
-
   <div id="appShell" class="app-shell phone-frame">
     <!-- Top Bento Command Bar -->
     <header class="topbar">
@@ -381,41 +351,6 @@
             <div id="auditLogList" class="audit-list"></div>
           </div>
 
-          <!-- Phone Access & PIN Bento -->
-          <div class="bento-card section-card-block sys-span-full">
-            <div class="bento-eyebrow">
-              <span class="eyebrow-dot" aria-hidden="true"></span>
-              <span>PHONE INSTALL (ANDROID &amp; IPHONE)</span>
-            </div>
-            <h3 class="panel-title">Install on Home Screen &amp; PIN Lock</h3>
-            <div id="lanUrlsBox" class="lan-box hidden"></div>
-            <div id="pwaInstallBanner" class="install-cta-box hidden">
-              <div>
-                <strong>Ready to install on this phone</strong>
-                <div class="muted-copy small">Adds the Red BM icon to your Home Screen &amp; App Drawer (full-screen, no browser bar).</div>
-              </div>
-              <button id="installAppBtn" type="button" class="btn-primary">Install App</button>
-            </div>
-            <div class="install-steps">
-              <div class="install-step"><strong>Android (Chrome):</strong> Open your HTTPS link → tap <strong>⋮ Menu</strong> → <strong>Install app</strong> (or tap <strong>Install App</strong> when prompted).</div>
-              <div class="install-step"><strong>iPhone (Safari):</strong> Open your HTTPS link in Safari → tap <strong>Share (↑)</strong> → <strong>Add to Home Screen</strong>.</div>
-            </div>
-            <div class="subhead-divider">4-DIGIT PERSONAL PIN</div>
-            <div class="pin-setup-row">
-              <input
-                id="newPinInput"
-                type="password"
-                inputmode="numeric"
-                maxlength="4"
-                placeholder="4 digits"
-                aria-label="New 4-digit personal PIN"
-              />
-              <button id="savePinBtn" type="button" class="btn-primary">Enable PIN</button>
-              <button id="removePinBtn" type="button" class="btn-danger-soft hidden">Remove</button>
-            </div>
-            <div id="pinSetupMsg" class="muted-copy small" role="status" aria-live="polite"></div>
-          </div>
-
           <!-- Official & Tier-1 Source Whitelist Health Bento -->
           <div class="bento-card section-card-block sys-span-full">
             <div class="bento-eyebrow">
@@ -476,6 +411,6 @@
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
-  <script src="./app.js?v=17" type="module"></script>
+  <script src="./app.js?v=18" type="module"></script>
 </body>
 </html>

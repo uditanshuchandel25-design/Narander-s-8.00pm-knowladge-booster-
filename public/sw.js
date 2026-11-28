@@ -1,4 +1,4 @@
-const CACHE_NAME = "bm-daily-intel-v17";
+const CACHE_NAME = "bm-daily-intel-v18";
 const APP_SHELL = [
   "./",
   "./index.html",
