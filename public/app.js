@@ -92,14 +92,18 @@ function updateDynamicGreeting() {
 }
 
 // --- Data Layer ---
+let lastCloudLoadMs = 0;
+
 async function fetchJsonWithFallback(apiPath, staticPath) {
   try {
     const res = await fetch(apiPath, { cache: "no-store" });
-    if (res.ok) return { data: await res.json(), via: "api" };
+    const ct = res.headers.get("content-type") || "";
+    if (res.ok && ct.includes("json")) return { data: await res.json(), via: "api" };
   } catch {
     // Fallback to static
   }
-  const res2 = await fetch(staticPath, { cache: "no-store" });
+  const sep = staticPath.includes("?") ? "&" : "?";
+  const res2 = await fetch(`${staticPath}${sep}t=${Date.now()}`, { cache: "no-store" });
   if (!res2.ok) throw new Error(`HTTP ${res2.status}`);
   return { data: await res2.json(), via: "static" };
 }
@@ -111,6 +115,7 @@ async function loadInitialData() {
       fetchJsonWithFallback("./api/latest", "./data/latest.json"),
       fetchJsonWithFallback("./api/editions", "./data/index.json"),
     ]);
+    lastCloudLoadMs = Date.now();
     state.serverMode = latestRes.via === "api" ? "local-live" : "static-cloud";
     state.latestEdition = latestRes.data;
     state.activeEdition = latestRes.data;
@@ -219,7 +224,8 @@ async function triggerLiveRefresh() {
       showToast(`Synced ${fresh.stats.totalItems} verified 24h items`);
     } else {
       await loadInitialData();
-      showToast("Reloaded latest published 8:00 PM edition");
+      const label = state.activeEdition?.editionLabel || "latest 8:00 PM edition";
+      showToast(`Checked cloud · ${label}`);
     }
   } catch (err) {
     setRunningTask(false, "Sync failed — retry", 0);
@@ -1400,6 +1406,13 @@ function initPwaInstall() {
     showToast("BM Intel installed as an app!");
   });
 }
+
+// Auto-refresh when returning to the installed phone app after 10+ minutes
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && Date.now() - lastCloudLoadMs > 10 * 60 * 1000) {
+    loadInitialData();
+  }
+});
 
 // Boot
 initThemeAndLayout();

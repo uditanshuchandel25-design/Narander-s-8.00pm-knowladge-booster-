@@ -1,21 +1,12 @@
 [
   {
-    "id": "log_1795814280268_pxkr",
-    "timestampUtc": "2026-11-27T21:18:00.268Z",
-    "timestampIst": "28 Nov, 02:48 am IST",
+    "id": "log_1795886698302_u50o",
+    "timestampUtc": "2026-11-28T17:24:58.301Z",
+    "timestampIst": "28 Nov, 10:54 pm IST",
     "action": "EDITOR_AGENT_RUN",
     "department": "Senior BM Signal Editor",
     "status": "OK",
-    "detail": "Edition 2026-11-28: Kept 20 crisp net-new signals (~7 min read), suppressed 16 routine/basic explainers from 17/18 live feeds."
-  },
-  {
-    "id": "log_1795812754200_j3eg",
-    "timestampUtc": "2026-11-27T20:52:34.200Z",
-    "timestampIst": "28 Nov, 02:22 am IST",
-    "action": "EDITOR_AGENT_RUN",
-    "department": "Senior BM Signal Editor",
-    "status": "OK",
-    "detail": "Edition 2026-11-28: Kept 20 crisp net-new signals (~7 min read), suppressed 16 routine/basic explainers from 17/18 live feeds."
+    "detail": "Edition 2026-11-28: Kept 16 crisp net-new signals (~6 min read), suppressed 4 routine/basic explainers from 18/18 live feeds."
   },
   {
     "id": "log_1795809198500_umjv",

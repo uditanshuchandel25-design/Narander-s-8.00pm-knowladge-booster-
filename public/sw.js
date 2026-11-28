@@ -1,4 +1,4 @@
-const CACHE_NAME = "bm-daily-intel-v12";
+const CACHE_NAME = "bm-daily-intel-v13";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -26,20 +26,24 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Network-first so UI & daily brief updates load immediately, with offline fallback
+// Network-first with clean offline cache keys so fresh 8PM data never gets stuck behind stale cache
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   if (request.method !== "GET") return;
 
+  const url = new URL(request.url);
+  const isDataJson = url.pathname.includes("/data/") && url.pathname.endsWith(".json");
+  const cacheKey = isDataJson ? new Request(url.origin + url.pathname) : request;
+
   event.respondWith(
-    fetch(request, { cache: "no-cache" })
+    fetch(request, { cache: "no-store" })
       .then((response) => {
         if (response && response.ok) {
           const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, clone));
         }
         return response;
       })
-      .catch(() => caches.match(request))
+      .catch(() => caches.match(cacheKey))
   );
 });
