@@ -176,6 +176,10 @@ describe("3. Live Server & REST API Integration Tests", () => {
     assert.ok(ed.stats.totalItems >= 10, `Expected >=10 curated signals, got ${ed.stats.totalItems}`);
     assert.ok(ed.topFive.length >= 3, "Expected topFive highlights");
     assert.ok(Array.isArray(ed.pendingDrafts) && ed.pendingDrafts.length >= 2, "Expected pending approval drafts");
+    for (const d of ed.pendingDrafts) {
+      assert.match(d.id, /_\d{4}-\d{2}-\d{2}_[0-9a-f]{6}$/, `Draft ID should carry content hash for auto-renewal: ${d.id}`);
+      assert.ok(d.updatedLabel && d.updatedLabel.includes("IST"), `Draft missing updatedLabel IST stamp: ${d.title}`);
+    }
     assert.ok(Array.isArray(ed.suppressedItems), "Expected suppressedItems array");
 
     for (const sec of ed.sections) {

@@ -25,7 +25,7 @@
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icons/bm-logo-192.png?v=12" type="image/png" />
   <link rel="apple-touch-icon" href="./icons/bm-logo.png?v=12" />
-  <link rel="stylesheet" href="./styles.css?v=14" />
+  <link rel="stylesheet" href="./styles.css?v=15" />
 </head>
 <body>
   <!-- Optional Personal PIN Lock Overlay -->
@@ -277,12 +277,15 @@
       <!-- ===================================================== -->
       <section id="tab-approvals" class="tab-panel" aria-label="Approvals and Saved Circulars">
         <div class="bento-card bento-peach-header approvals-hero">
-          <div class="bento-eyebrow">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
-            <span>HUMAN-IN-THE-LOOP · ASKS BEFORE IT ACTS</span>
+          <div class="hero-top-bar">
+            <div class="bento-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span>HUMAN-IN-THE-LOOP · ASKS BEFORE IT ACTS</span>
+            </div>
+            <span id="approvalsUpdatedStamp" class="mono-pill">Syncing drafts…</span>
           </div>
           <h2 class="panel-title-lg">Approvals &amp; Team Briefings</h2>
-          <p class="muted-copy">Review, edit, and approve your 9:30 AM Panchkula huddle and team/customer notes before copying to WhatsApp. Every approval is recorded in the Audit Log.</p>
+          <p class="muted-copy">Auto-renewed with every 8:00 PM edition &amp; Sync. Review, edit, and approve your 9:30 AM Panchkula huddle and team notes before copying to WhatsApp.</p>
         </div>
 
         <div id="approvalsList" class="approvals-bento-grid"></div>
@@ -471,6 +474,6 @@
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
-  <script src="./app.js?v=14" type="module"></script>
+  <script src="./app.js?v=15" type="module"></script>
 </body>
 </html>

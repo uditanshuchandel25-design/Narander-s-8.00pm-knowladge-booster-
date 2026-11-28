@@ -355,7 +355,11 @@ async function submitCommandPrompt(rawQuery) {
 
   const draftCta = document.getElementById("commandDraftCta");
   if (data.suggestedDraft) {
-    state.customDrafts.unshift(data.suggestedDraft);
+    state.customDrafts.unshift({
+      ...data.suggestedDraft,
+      editionDate: state.activeEdition?.editionDate || "",
+      createdAtMs: Date.now(),
+    });
     state.customDrafts = state.customDrafts.slice(0, 10);
     saveJson(CUSTOM_DRAFTS_KEY, state.customDrafts);
     renderApprovals();
@@ -376,15 +380,30 @@ async function submitCommandPrompt(rawQuery) {
     .join("");
 
   const st = state.activeEdition?.stats || {};
-  setRunningTask(false, `${st.feedsOnline || 18}/${st.feedsTotal || 18} live · Next 20:00 IST`, 100);
+  setRunningTask(false, `${st.feedsOnline || 18}/${st.feedsTotal || 18} live · ${formatShortUpdatedLabel(state.activeEdition)}`, 100);
   setTimeout(() => {
     const bar = document.getElementById("liveProgressBar");
     if (bar) bar.style.transform = "scaleX(0)";
   }, 500);
 }
 
-// --- Combined Approvals Queue ---
+// --- Combined Approvals Queue (Auto-Refreshes With Every New Edition / Content Hash) ---
+function pruneStaleCustomDrafts() {
+  const activeDate = state.activeEdition?.editionDate;
+  const cutoffMs = Date.now() - 24 * 60 * 60 * 1000;
+  const before = state.customDrafts.length;
+  state.customDrafts = state.customDrafts.filter((d) => {
+    if (d.createdAtMs && d.createdAtMs < cutoffMs) return false;
+    if (activeDate && d.editionDate && d.editionDate !== activeDate) return false;
+    return true;
+  });
+  if (state.customDrafts.length !== before) {
+    saveJson(CUSTOM_DRAFTS_KEY, state.customDrafts);
+  }
+}
+
 function getActiveDrafts() {
+  pruneStaleCustomDrafts();
   const edDrafts = state.activeEdition?.pendingDrafts || [];
   const combined = [...state.customDrafts, ...edDrafts];
   const seen = new Set();
@@ -846,6 +865,11 @@ function renderSuppressedDrawer() {
 function renderApprovals() {
   const container = document.getElementById("approvalsList");
   const drafts = getActiveDrafts();
+  const stampEl = document.getElementById("approvalsUpdatedStamp");
+  if (stampEl && state.activeEdition) {
+    const pendingCount = drafts.filter((d) => state.approvalStatus[d.id] !== "approved").length;
+    stampEl.textContent = `SYNCED ${formatShortUpdatedLabel(state.activeEdition)} · ${pendingCount} PENDING`;
+  }
 
   if (drafts.length === 0) {
     container.innerHTML = `<div class="empty-notice">

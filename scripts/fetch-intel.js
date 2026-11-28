@@ -673,19 +673,38 @@ function buildMorningHuddle(sectionsMap) {
   };
 }
 
-function buildPendingDrafts(sectionsMap, morningHuddle, editionDateKey) {
-  const drafts = [];
+function shortDraftHash(str = "") {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return (h >>> 0).toString(16).padStart(8, "0").slice(0, 6);
+}
 
-  // Draft 1: Next-Day 9:30 AM Panchkula Branch Morning Huddle (WhatsApp Ready)
+function buildPendingDrafts(sectionsMap, morningHuddle, editionDateKey, editionDateReadable = "") {
+  const drafts = [];
+  const stamp = editionDateReadable || `${editionDateKey} (8:00 PM IST)`;
+  const allSignalItems = Object.values(sectionsMap).flat();
+
+  // Draft 1: Next-Day 9:30 AM Panchkula Branch Morning Huddle (WhatsApp Ready — always refreshed!)
+  const huddleStableKey = [
+    morningHuddle.salesHook,
+    morningHuddle.competitorCounter,
+    morningHuddle.opsAlert,
+    morningHuddle.tppFocus,
+  ].join("|");
+
   drafts.push({
-    id: `huddle_${editionDateKey}`,
+    id: `huddle_${editionDateKey}_${shortDraftHash(huddleStableKey)}`,
     department: "Branch Leadership · Huddle",
     channel: "WhatsApp / Team Huddle",
+    updatedLabel: stamp,
     title: "9:30 AM Panchkula Morning Huddle Brief",
-    reason: "Prepared from verified last-24h RBI, pricing, policy & insurance updates — awaiting your approval before sharing.",
+    reason: `Auto-updated from verified 24h RBI, pricing, policy & insurance updates (${stamp}) — awaiting your approval before sharing.`,
     body: [
       `*HDFC Bank Panchkula — 9:30 AM Morning Huddle*`,
-      `Edition: ${editionDateKey} (8:00 PM IST Intel)`,
+      `Edition: ${stamp}`,
       ``,
       `1) *Sales Hook:* ${morningHuddle.salesHook}`,
       ``,
@@ -699,47 +718,58 @@ function buildPendingDrafts(sectionsMap, morningHuddle, editionDateKey) {
     ].join("\n"),
   });
 
-  // Draft 2: Direct HDFC / Frontline Policy Desk Note (if any HDFC update exists today)
-  const hdfcItem =
-    sectionsMap.bank_policies.find((i) => i.bankCategories.includes("HDFC")) ||
-    sectionsMap.interest_rates.find((i) => i.bankCategories.includes("HDFC"));
+  // Draft 2: Direct HDFC Update (across ALL sections) or Top Pricing / Bank Policy Frontline Note
+  const hdfcItem = allSignalItems.find((i) => (i.bankCategories || []).includes("HDFC"));
+  const frontlineItem =
+    hdfcItem ||
+    (sectionsMap.bank_policies || [])[0] ||
+    (sectionsMap.interest_rates || [])[0];
 
-  if (hdfcItem) {
+  if (frontlineItem) {
+    const isHdfc = (frontlineItem.bankCategories || []).includes("HDFC");
+    const noteStableKey = `${frontlineItem.headline}|${(frontlineItem.keyPoints || []).join("|")}|${frontlineItem.branchImpact}`;
     drafts.push({
-      id: `hdfc_note_${editionDateKey}`,
-      department: "Frontline Ops & Customer Desk",
-      channel: "Internal PB / Teller Brief",
-      title: `Desk Note: ${hdfcItem.headline.slice(0, 68)}${hdfcItem.headline.length > 68 ? "…" : ""}`,
-      reason: "Direct HDFC Bank development spotted in last 24h — approve to circulate uniform guidance to PBs & Tellers.",
+      id: `${isHdfc ? "hdfc_note" : "desk_note"}_${editionDateKey}_${shortDraftHash(noteStableKey)}`,
+      department: isHdfc ? "Frontline Ops & Customer Desk" : "Rates & Frontline Sales Desk",
+      channel: "Internal PB / RM Brief",
+      updatedLabel: stamp,
+      title: `Desk Note: ${frontlineItem.headline.slice(0, 68)}${frontlineItem.headline.length > 68 ? "…" : ""}`,
+      reason: isHdfc
+        ? `Direct HDFC Bank update auto-synced (${stamp}) — approve to circulate uniform guidance to PBs & Tellers.`
+        : `Top frontline policy/pricing move auto-synced (${stamp}) — approve to align RMs & PBs before client calls.`,
       body: [
-        `*Team Desk Note — HDFC Bank Update (${editionDateKey})*`,
-        `Topic: ${hdfcItem.headline}`,
+        `*Team Desk Note — ${isHdfc ? "HDFC Bank Update" : "Pricing & Policy Watch"} (${editionDateKey})*`,
+        `Topic: ${frontlineItem.headline}${frontlineItem.effectiveTag ? ` [${frontlineItem.effectiveTag}]` : ""}`,
         ``,
-        ...(hdfcItem.keyPoints || []).map((pt) => `• ${pt}`),
+        ...(frontlineItem.keyPoints || []).map((pt) => `• ${pt}`),
         ``,
-        `*Action at Counters:* ${hdfcItem.branchImpact}`,
-        `Source: ${hdfcItem.source}`,
+        `*Action at Counters:* ${frontlineItem.branchImpact}`,
+        `Source: ${frontlineItem.source}`,
       ].join("\n"),
     });
   }
 
-  // Draft 3: Top RBI Compliance Reminder (if any High-Priority RBI circular exists today)
-  const rbiHigh = sectionsMap.rbi_regulatory.find((i) => i.priority === "HIGH");
-  if (rbiHigh) {
+  // Draft 3: Top RBI Compliance Reminder (HIGH priority first, else top regulatory circular)
+  const rbiTop =
+    (sectionsMap.rbi_regulatory || []).find((i) => i.priority === "HIGH") ||
+    (sectionsMap.rbi_regulatory || [])[0];
+  if (rbiTop) {
+    const rbiStableKey = `${rbiTop.headline}|${(rbiTop.keyPoints || []).join("|")}|${rbiTop.branchImpact}`;
     drafts.push({
-      id: `rbi_alert_${editionDateKey}`,
+      id: `rbi_alert_${editionDateKey}_${shortDraftHash(rbiStableKey)}`,
       department: "Compliance & Audit Desk",
       channel: "Branch Ops / RM Checklist",
-      title: `Compliance Alert: ${rbiHigh.headline.slice(0, 62)}${rbiHigh.headline.length > 62 ? "…" : ""}`,
-      reason: "Official RBI directive published in last 24h — review & approve to brief branch operations staff.",
+      updatedLabel: stamp,
+      title: `Compliance Alert: ${rbiTop.headline.slice(0, 62)}${rbiTop.headline.length > 62 ? "…" : ""}`,
+      reason: `Official RBI / regulatory directive auto-synced (${stamp}) — review & approve to brief branch operations staff.`,
       body: [
         `*RBI Regulatory Watch (${editionDateKey})*`,
-        `${rbiHigh.headline}`,
+        `${rbiTop.headline}${rbiTop.effectiveTag ? ` [${rbiTop.effectiveTag}]` : ""}`,
         ``,
-        ...(rbiHigh.keyPoints || []).map((pt) => `• ${pt}`),
+        ...(rbiTop.keyPoints || []).map((pt) => `• ${pt}`),
         ``,
-        `*Branch Ops Check:* ${rbiHigh.branchImpact}`,
-        `Official Link: ${rbiHigh.url}`,
+        `*Branch Ops Check:* ${rbiTop.branchImpact}`,
+        `Official Link: ${rbiTop.url}`,
       ].join("\n"),
     });
   }
@@ -1131,7 +1161,7 @@ export async function runIntelFetch() {
     ? { title: "Next-Day 9:30 AM Panchkula Branch Huddle Playbook", ...geminiResult.huddle }
     : buildMorningHuddle(refinedMap);
 
-  const pendingDrafts = buildPendingDrafts(refinedMap, morningHuddle, editionDateKey);
+  const pendingDrafts = buildPendingDrafts(refinedMap, morningHuddle, editionDateKey, editionDateReadable);
 
   const wordCount = signalFlat.reduce((acc, it) => {
     const kp = (it.keyPoints || []).join(" ");

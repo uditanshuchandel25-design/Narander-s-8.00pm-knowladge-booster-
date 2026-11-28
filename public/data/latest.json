@@ -1,8 +1,8 @@
 {
   "editionDate": "2026-11-28",
-  "editionLabel": "Sat, 28 Nov, 2026, 10:54 pm IST",
+  "editionLabel": "Sat, 28 Nov, 2026, 11:50 pm IST",
   "scheduledSlot": "8:00 PM IST Daily Brief",
-  "generatedAtUtc": "2026-11-28T17:24:52.000Z",
+  "generatedAtUtc": "2026-11-28T18:20:48.000Z",
   "profile": {
     "name": "Narendra",
     "role": "Branch Manager",
@@ -12,23 +12,23 @@
   "synthesisMode": "Senior BM Signal Editor Agent (Zero-Fluff · 18 Direct Official & Tier-1 Sources)",
   "editorAgent": {
     "agentName": "Senior BM Signal Editor",
-    "keptSignals": 16,
-    "suppressedNoise": 4,
+    "keptSignals": 15,
+    "suppressedNoise": 5,
     "timeSavedMinutes": 3,
-    "skippedHttpFetches": 4
+    "skippedHttpFetches": 5
   },
   "stats": {
-    "totalItems": 16,
-    "suppressedCount": 4,
-    "estimatedReadMinutes": 6,
+    "totalItems": 15,
+    "suppressedCount": 5,
+    "estimatedReadMinutes": 5,
     "feedsOnline": 18,
     "feedsTotal": 18,
     "highPriorityCount": 2,
-    "rbiCount": 6,
+    "rbiCount": 5,
     "ratesCount": 3,
     "hdfcCount": 2,
     "insuranceCount": 0,
-    "pendingDraftsCount": 2
+    "pendingDraftsCount": 3
   },
   "topFive": [
     {
@@ -78,12 +78,12 @@
       ]
     },
     {
-      "text": "RBI issues ATM cash withdrawal rules: Banks must alert you about monthly free transactions used; 6 key points to know",
-      "takeaway": "The RBI has consolidated ATM and PoS cash withdrawal rules through a new Master Direction, effective 27 November 2026.",
+      "text": "Gold loan stress rises as prices fall; RBI steps up monitoring of banks and NBFCs amid collateral risks",
+      "takeaway": "The RBI has stepped up scrutiny of India's ₹23 lakh crore gold loan market as falling bullion prices weaken collateral cover.",
       "effectiveTag": null,
       "section": "rbi_regulatory",
       "source": "Livemint — Money & Personal Finance",
-      "url": "https://www.livemint.com/money/personal-finance/rbi-issues-atm-cash-withdrawal-rules-banks-must-alert-you-about-monthly-free-transactions-used-6-key-points-to-know-11795842057053.html",
+      "url": "https://www.livemint.com/money/personal-finance/gold-loan-stress-rises-as-prices-fall-rbi-steps-up-monitoring-of-banks-and-nbfcs-amid-collateral-risks-11795865178399.html",
       "bankCategories": [
         "PSU/Govt"
       ]
@@ -98,20 +98,31 @@
   },
   "pendingDrafts": [
     {
-      "id": "huddle_2026-11-28",
+      "id": "huddle_2026-11-28_1b4a87",
       "department": "Branch Leadership · Huddle",
       "channel": "WhatsApp / Team Huddle",
+      "updatedLabel": "Sat, 28 Nov, 2026, 11:50 pm IST",
       "title": "9:30 AM Panchkula Morning Huddle Brief",
-      "reason": "Prepared from verified last-24h RBI, pricing, policy & insurance updates — awaiting your approval before sharing.",
-      "body": "*HDFC Bank Panchkula — 9:30 AM Morning Huddle*\nEdition: 2026-11-28 (8:00 PM IST Intel)\n\n1) *Sales Hook:* Rate Pitch: \"₹50 lakh HDFC Bank home loan for 20 years: How much EMI will you pay at 8%, 9% and 10% interest?\" (Livemint — Money & Personal Finance) — Let us now compare the three different cases of home loans at 8%, 9% and 10%.\n\n2) *Competitor Counter:* Peer Counter: \"RBI's new ATM rules: ₹23 fee cap, free transaction limits and cash withdrawal rules explained\" (CNBC-TV18 — Personal Finance & Insurance) — Counter across Panchkula with HDFC Bank's faster digital sanction TAT, CMS/working-capital bundling, and Imperia/Preferred relationship depth.\n\n3) *Ops & Compliance Alert:* Compliance Check: \"What is PF Near You? How EPFO's Nidhi Aapke Nikat programme helps employees, pensioners; details here\" (Livemint — Money & Personal Finance) — verify KYC/documentation discipline at counters and track HDFC Bank's internal circular.\n\n4) *Insurance / TPP Focus:* Wealth & NRI Talking Point: \"Senior citizen FD rates: Suryoday Bank offers 8.5% on five-year FDs; compare SBI, HDFC and other banks\" — equip RMs for HNI, treasury, and NRI client conversations.\n\n— BM Desk · Verified Official & Tier-1 Sources"
+      "reason": "Auto-updated from verified 24h RBI, pricing, policy & insurance updates (Sat, 28 Nov, 2026, 11:50 pm IST) — awaiting your approval before sharing.",
+      "body": "*HDFC Bank Panchkula — 9:30 AM Morning Huddle*\nEdition: Sat, 28 Nov, 2026, 11:50 pm IST\n\n1) *Sales Hook:* Rate Pitch: \"₹50 lakh HDFC Bank home loan for 20 years: How much EMI will you pay at 8%, 9% and 10% interest?\" (Livemint — Money & Personal Finance) — Let us now compare the three different cases of home loans at 8%, 9% and 10%.\n\n2) *Competitor Counter:* Peer Counter: \"RBI's new ATM rules: ₹23 fee cap, free transaction limits and cash withdrawal rules explained\" (CNBC-TV18 — Personal Finance & Insurance) — Counter across Panchkula with HDFC Bank's faster digital sanction TAT, CMS/working-capital bundling, and Imperia/Preferred relationship depth.\n\n3) *Ops & Compliance Alert:* Compliance Check: \"What is PF Near You? How EPFO's Nidhi Aapke Nikat programme helps employees, pensioners; details here\" (Livemint — Money & Personal Finance) — verify KYC/documentation discipline at counters and track HDFC Bank's internal circular.\n\n4) *Insurance / TPP Focus:* Wealth & NRI Talking Point: \"Senior citizen FD rates: Suryoday Bank offers 8.5% on five-year FDs; compare SBI, HDFC and other banks\" — equip RMs for HNI, treasury, and NRI client conversations.\n\n— BM Desk · Verified Official & Tier-1 Sources"
     },
     {
-      "id": "hdfc_note_2026-11-28",
+      "id": "hdfc_note_2026-11-28_f4d9ea",
       "department": "Frontline Ops & Customer Desk",
-      "channel": "Internal PB / Teller Brief",
+      "channel": "Internal PB / RM Brief",
+      "updatedLabel": "Sat, 28 Nov, 2026, 11:50 pm IST",
       "title": "Desk Note: ₹50 lakh HDFC Bank home loan for 20 years: How much EMI will you pay…",
-      "reason": "Direct HDFC Bank development spotted in last 24h — approve to circulate uniform guidance to PBs & Tellers.",
+      "reason": "Direct HDFC Bank update auto-synced (Sat, 28 Nov, 2026, 11:50 pm IST) — approve to circulate uniform guidance to PBs & Tellers.",
       "body": "*Team Desk Note — HDFC Bank Update (2026-11-28)*\nTopic: ₹50 lakh HDFC Bank home loan for 20 years: How much EMI will you pay at 8%, 9% and 10% interest?\n\n• Let us now compare the three different cases of home loans at 8%, 9% and 10%.\n• At an annual interest rate of 8%, the monthly EMI works out to ₹ 41,822.\n\n*Action at Counters:* Update RM pitch decks immediately and proactively call maturing FD / pipeline loan clients.\nSource: Livemint — Money & Personal Finance"
+    },
+    {
+      "id": "rbi_alert_2026-11-28_3986ce",
+      "department": "Compliance & Audit Desk",
+      "channel": "Branch Ops / RM Checklist",
+      "updatedLabel": "Sat, 28 Nov, 2026, 11:50 pm IST",
+      "title": "Compliance Alert: What is PF Near You? How EPFO's Nidhi Aapke Nikat programme he…",
+      "reason": "Official RBI / regulatory directive auto-synced (Sat, 28 Nov, 2026, 11:50 pm IST) — review & approve to brief branch operations staff.",
+      "body": "*RBI Regulatory Watch (2026-11-28)*\nWhat is PF Near You? How EPFO's Nidhi Aapke Nikat programme helps employees, pensioners; details here\n\n• Known as 'Nidhi Aapke Nikat 2.0', the initiative is a district-level public outreach and grievance redressal programme organised by EPFO under the Union Ministry of…\n• It aims to bring provident fund services closer to subscribers by allowing them to interact directly with officials and seek solutions to their problems.\n\n*Branch Ops Check:* Brief Personal Bankers & Tellers in morning huddle; verify Re-KYC and documentation completeness before closure.\nOfficial Link: https://www.livemint.com/money/personal-finance/what-is-pf-near-you-how-epfos-nidhi-aapke-nikat-programme-helps-employees-pensioners-details-here-11795865641887.html"
     }
   ],
   "sections": [
@@ -123,7 +134,7 @@
       "description": "Circulars, KYC/AML, lending norms, audit/compliance directives, Ombudsman & regulatory penalties.",
       "items": [
         {
-          "id": "mint_money_17",
+          "id": "mint_money_10",
           "headline": "What is PF Near You? How EPFO's Nidhi Aapke Nikat programme helps employees, pensioners; details here",
           "keyPoints": [
             "Known as 'Nidhi Aapke Nikat 2.0', the initiative is a district-level public outreach and grievance redressal programme organised by EPFO under the Union Ministry of…",
@@ -148,32 +159,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "mint_money_28",
-          "headline": "RBI issues ATM cash withdrawal rules: Banks must alert you about monthly free transactions used; 6 key points to know",
-          "keyPoints": [
-            "The RBI has consolidated ATM and PoS cash withdrawal rules through a new Master Direction, effective 27 November 2026.",
-            "From free ATM transaction limits and charges to failed withdrawals and PoS cash withdrawal limits, here are six key points customers should know."
-          ],
-          "summary": "The RBI has consolidated ATM and PoS cash withdrawal rules through a new Master Direction, effective 27 November 2026.",
-          "branchImpact": "Verify branch ATM cash reconciliation & failed-transaction auto-reversal TAT compliance.",
-          "section": "rbi_regulatory",
-          "bankCategories": [
-            "PSU/Govt"
-          ],
-          "insuranceType": null,
-          "priority": "MEDIUM",
-          "source": "Livemint — Money & Personal Finance",
-          "sourceTier": "Tier-1 Financial Media",
-          "url": "https://www.livemint.com/money/personal-finance/rbi-issues-atm-cash-withdrawal-rules-banks-must-alert-you-about-monthly-free-transactions-used-6-key-points-to-know-11795842057053.html",
-          "publishedAt": "2026-11-28T05:49:19.000Z",
-          "publishedIst": "28 Nov, 11:19 am",
-          "withinStrict24h": true,
-          "effectiveTag": null,
-          "signalReason": "Net-New Banking/Policy Signal",
-          "isExecutiveSignal": true
-        },
-        {
-          "id": "mint_money_18",
+          "id": "mint_money_11",
           "headline": "Gold loan stress rises as prices fall; RBI steps up monitoring of banks and NBFCs amid collateral risks",
           "keyPoints": [
             "The RBI has stepped up scrutiny of India's ₹23 lakh crore gold loan market as falling bullion prices weaken collateral cover.",
@@ -198,7 +184,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "mint_money_25",
+          "id": "mint_money_18",
           "headline": "Gold loan borrowers face higher LTV risk as prices fall: Why lenders may seek additional gold or part-payment",
           "keyPoints": [
             "Gold prices have fallen nearly 30% from their January peak, raising LTV risks for existing gold loan borrowers.",
@@ -283,7 +269,7 @@
       "description": "Repo/MCLR/RLLR revisions, FD/RD/Savings rates, Home/Auto/MSME loan rates & Govt Small Savings.",
       "items": [
         {
-          "id": "mint_money_27",
+          "id": "mint_money_20",
           "headline": "₹50 lakh HDFC Bank home loan for 20 years: How much EMI will you pay at 8%, 9% and 10% interest?",
           "keyPoints": [
             "Let us now compare the three different cases of home loans at 8%, 9% and 10%.",
@@ -308,7 +294,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "mint_money_22",
+          "id": "mint_money_15",
           "headline": "Gold prices near $3,650: US jobs data and inflation may decide whether bullion’s rebound can last through early December",
           "keyPoints": [
             "Gold prices are approaching $3,650, but $3,500 remains a crucial support level.",
@@ -333,7 +319,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "mint_money_24",
+          "id": "mint_money_17",
           "headline": "Gold and silver prices recover, but Fed rate-hike risks persist: Where could prices head in six months? Expert views",
           "keyPoints": [
             "On the Multi Commodity Exchange (MCX), gold futures for December delivery settled at ₹1,25,350 per 10 grams, up 0.12%.",
@@ -368,7 +354,7 @@
       "description": "AMB/AQB updates, service charges, credit/debit card changes, salary/govt/current account launches.",
       "items": [
         {
-          "id": "cnbc_pf_10",
+          "id": "cnbc_pf_26",
           "headline": "RBI's new ATM rules: ₹23 fee cap, free transaction limits and cash withdrawal rules explained",
           "keyPoints": [
             "Under the new directions, banks can charge customers a maximum of ₹23 per transaction, plus applicable taxes.",
@@ -412,7 +398,7 @@
       "description": "NPCI/UPI, SEBI/Mutual Funds, banking liquidity, foreign banks (HSBC/StanChart/DBS) & global central banks.",
       "items": [
         {
-          "id": "mint_money_16",
+          "id": "mint_money_9",
           "headline": "Senior citizen FD rates: Suryoday Bank offers 8.5% on five-year FDs; compare SBI, HDFC and other banks",
           "keyPoints": [
             "Senior citizens can earn up to 8.5% interest on five-year fixed deposits, with Suryoday Small Finance Bank offering the highest rate.",
@@ -439,7 +425,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "bl_money_5",
+          "id": "bl_money_22",
           "headline": "Capri Global Finance’s board approves proposal for making ₹200 cr investment in housing arm via rights issue",
           "keyPoints": [
             "The investment in CGHFL’s is to meet its general business requirements,.",
@@ -464,32 +450,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "ndtv_profit_29",
-          "headline": "LIC Employee Deposits Rs 1.17 Crore Cash From Selling Coconuts. What Saved Her From A Huge Tax Bill",
-          "keyPoints": [
-            "The Income Tax Department treated the entire cash deposited in her bank accounts as unexplained money.",
-            "The Chennai tribunal, however, found that her bank transactions, updated tax return and confirmations from coconut buyers supported her claim of running a trading bu…"
-          ],
-          "summary": "The Income Tax Department treated the entire cash deposited in her bank accounts as unexplained money.",
-          "branchImpact": "Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
-          "section": "finance_macro",
-          "bankCategories": [
-            "PSU/Govt"
-          ],
-          "insuranceType": null,
-          "priority": "STANDARD",
-          "source": "NDTV Profit — Markets & Banking",
-          "sourceTier": "Tier-1 Financial Media",
-          "url": "https://www.ndtvprofit.com/personal-finance/lic-employee-deposits-rs-1-17-crore-cash-from-selling-coconuts-what-saved-her-from-a-huge-tax-bill-12389185#publisher=newsstand",
-          "publishedAt": "2026-11-28T13:44:35.000Z",
-          "publishedIst": "28 Nov, 07:14 pm",
-          "withinStrict24h": true,
-          "effectiveTag": null,
-          "signalReason": "Verified Sector Intelligence",
-          "isExecutiveSignal": true
-        },
-        {
-          "id": "mint_money_14",
+          "id": "mint_money_7",
           "headline": "EPFO's proposed SWP: How long will ₹20 lakh, ₹40 lakh and ₹75 lakh retirement savings last?",
           "keyPoints": [
             "An SWP allows investors to withdraw a predetermined amount from their accumulated savings at regular intervals.",
@@ -514,7 +475,7 @@
           "isExecutiveSignal": true
         },
         {
-          "id": "mint_money_15",
+          "id": "mint_money_8",
           "headline": "EPFO Amnesty Scheme 2026: How employers can regularise PF trusts before December 28",
           "keyPoints": [
             "The Amnesty Scheme gives eligible employers a one-time opportunity to regularise their past exemption status and review their PF records.",
@@ -562,6 +523,31 @@
           "effectiveTag": null,
           "signalReason": "Verified Sector Intelligence",
           "isExecutiveSignal": true
+        },
+        {
+          "id": "mint_economy_21",
+          "headline": "Economy to sustain growth momentum in Dec quarter, but near-term inflation risks persist: finance ministry review",
+          "keyPoints": [
+            "The Union finance ministry reported firm Indian business activity, rising industrial output, and resilient domestic demand.",
+            "Weather changes, oil-market volatility, and global trade uncertainty could fuel inflation, however."
+          ],
+          "summary": "The Union finance ministry reported firm Indian business activity, rising industrial output, and resilient domestic demand.",
+          "branchImpact": "Keep RMs informed on system liquidity, mutual funds, and sovereign yields affecting bulk FD and wealth pitches.",
+          "section": "finance_macro",
+          "bankCategories": [
+            "PSU/Govt"
+          ],
+          "insuranceType": null,
+          "priority": "STANDARD",
+          "source": "Livemint — Economy & Policy",
+          "sourceTier": "Tier-1 Financial Media",
+          "url": "https://www.livemint.com/economy/india-economy-growth-momentum-december-quarter-near-term-inflation-risks-continue-finance-ministry-review-11795858066819.html",
+          "publishedAt": "2026-11-28T11:05:45.000Z",
+          "publishedIst": "28 Nov, 04:35 pm",
+          "withinStrict24h": true,
+          "effectiveTag": null,
+          "signalReason": "Verified Sector Intelligence",
+          "isExecutiveSignal": true
         }
       ],
       "emptyNotice": null
@@ -569,7 +555,18 @@
   ],
   "suppressedItems": [
     {
-      "id": "mint_money_12",
+      "id": "mint_money_4",
+      "headline": "‘Cannot be made to suffer’: Rajasthan HC backs widow's switch from CPF to OPF, cites state's ‘lapse’ – what did it say?",
+      "source": "Livemint — Money & Personal Finance",
+      "url": "https://www.livemint.com/money/cannot-be-made-to-suffer-rajasthan-hc-backs-widows-switch-from-cpf-to-opf-cites-states-lapse-what-did-it-say-11795885575658.html",
+      "publishedIst": "28 Nov, 11:25 pm",
+      "sectionId": "finance_macro",
+      "sectionTitle": "Finance & Global",
+      "suppressedReason": "Suppressed (general commentary / Q&A explainer)",
+      "isExecutiveSignal": false
+    },
+    {
+      "id": "mint_money_5",
       "headline": "How much salary hike do you need to beat inflation in India? What it means for your savings, MF SIPs, financial goals",
       "source": "Livemint — Money & Personal Finance",
       "url": "https://www.livemint.com/money/personal-finance/how-much-salary-hike-do-you-need-to-beat-inflation-in-india-what-it-means-for-your-savings-mf-sips-financial-goals-11795877535546.html",
@@ -580,7 +577,7 @@
       "isExecutiveSignal": false
     },
     {
-      "id": "mint_money_13",
+      "id": "mint_money_6",
       "headline": "Dreaming of early retirement with ₹10 crore? Why a ₹60,000 SIP may fall short",
       "source": "Livemint — Money & Personal Finance",
       "url": "https://www.livemint.com/money/personal-finance/dreaming-of-early-retirement-with-rs-10-crore-why-a-rs-60-000-sip-may-fall-short-11795875528045.html",
@@ -591,7 +588,7 @@
       "isExecutiveSignal": false
     },
     {
-      "id": "mint_money_19",
+      "id": "mint_money_12",
       "headline": "Submitted digital life certificate? Pensioners must check these details before November 30 to avoid payment delays",
       "source": "Livemint — Money & Personal Finance",
       "url": "https://www.livemint.com/money/personal-finance/submitted-digital-life-certificate-pensioners-must-check-these-details-before-november-30-to-avoid-payment-delays-11795860743810.html",
@@ -602,7 +599,7 @@
       "isExecutiveSignal": false
     },
     {
-      "id": "mint_money_20",
+      "id": "mint_money_13",
       "headline": "Planning to start a mutual fund SIP? 5 key steps to determine your ideal monthly investment amount; experts explain",
       "source": "Livemint — Money & Personal Finance",
       "url": "https://www.livemint.com/money/personal-finance/planning-to-start-a-mutual-fund-sip-5-key-steps-to-determine-your-ideal-monthly-investment-amount-experts-explain-11795859601292.html",
@@ -622,7 +619,7 @@
       "httpStatus": 200,
       "fetched": 35,
       "verified24h": 17,
-      "ms": 5924
+      "ms": 501
     },
     {
       "id": "bl_money",
@@ -631,8 +628,8 @@
       "status": "OK",
       "httpStatus": 200,
       "fetched": 60,
-      "verified24h": 5,
-      "ms": 5225
+      "verified24h": 3,
+      "ms": 576
     },
     {
       "id": "bs_finance",
@@ -641,8 +638,8 @@
       "status": "OK",
       "httpStatus": 200,
       "fetched": 35,
-      "verified24h": 3,
-      "ms": 4996
+      "verified24h": 2,
+      "ms": 498
     },
     {
       "id": "et_banking",
@@ -652,17 +649,7 @@
       "httpStatus": 200,
       "fetched": 50,
       "verified24h": 1,
-      "ms": 4098
-    },
-    {
-      "id": "cnbc_pf",
-      "name": "CNBC-TV18 — Personal Finance & Insurance",
-      "tier": "Tier-1 Financial Media",
-      "status": "OK",
-      "httpStatus": 200,
-      "fetched": 200,
-      "verified24h": 1,
-      "ms": 5583
+      "ms": 483
     },
     {
       "id": "mint_economy",
@@ -672,17 +659,7 @@
       "httpStatus": 200,
       "fetched": 35,
       "verified24h": 1,
-      "ms": 5857
-    },
-    {
-      "id": "ndtv_profit",
-      "name": "NDTV Profit — Markets & Banking",
-      "tier": "Tier-1 Financial Media",
-      "status": "OK",
-      "httpStatus": 200,
-      "fetched": 20,
-      "verified24h": 1,
-      "ms": 6387
+      "ms": 510
     },
     {
       "id": "cnbc_econ",
@@ -692,7 +669,17 @@
       "httpStatus": 200,
       "fetched": 200,
       "verified24h": 1,
-      "ms": 7153
+      "ms": 595
+    },
+    {
+      "id": "cnbc_pf",
+      "name": "CNBC-TV18 — Personal Finance & Insurance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 200,
+      "verified24h": 1,
+      "ms": 611
     },
     {
       "id": "cnbc_finance",
@@ -702,27 +689,7 @@
       "httpStatus": 200,
       "fetched": 200,
       "verified24h": 1,
-      "ms": 10431
-    },
-    {
-      "id": "rbi_press",
-      "name": "RBI Press Releases",
-      "tier": "Official Regulator",
-      "status": "OK",
-      "httpStatus": 200,
-      "fetched": 10,
-      "verified24h": 0,
-      "ms": 3107
-    },
-    {
-      "id": "rbi_notifications",
-      "name": "RBI Notifications",
-      "tier": "Official Regulator",
-      "status": "OK",
-      "httpStatus": 200,
-      "fetched": 10,
-      "verified24h": 0,
-      "ms": 3049
+      "ms": 649
     },
     {
       "id": "sebi_official",
@@ -732,17 +699,7 @@
       "httpStatus": 200,
       "fetched": 30,
       "verified24h": 0,
-      "ms": 3725
-    },
-    {
-      "id": "bs_insurance",
-      "name": "Business Standard — Insurance",
-      "tier": "Tier-1 Financial Media",
-      "status": "OK",
-      "httpStatus": 200,
-      "fetched": 16,
-      "verified24h": 0,
-      "ms": 5115
+      "ms": 509
     },
     {
       "id": "bs_banking",
@@ -752,7 +709,27 @@
       "httpStatus": 200,
       "fetched": 35,
       "verified24h": 0,
-      "ms": 5202
+      "ms": 495
+    },
+    {
+      "id": "rbi_press",
+      "name": "RBI Press Releases",
+      "tier": "Official Regulator",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 10,
+      "verified24h": 0,
+      "ms": 761
+    },
+    {
+      "id": "bs_insurance",
+      "name": "Business Standard — Insurance",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 16,
+      "verified24h": 0,
+      "ms": 527
     },
     {
       "id": "mc_business",
@@ -762,7 +739,17 @@
       "httpStatus": 200,
       "fetched": 15,
       "verified24h": 0,
-      "ms": 6170
+      "ms": 535
+    },
+    {
+      "id": "rbi_notifications",
+      "name": "RBI Notifications",
+      "tier": "Official Regulator",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 10,
+      "verified24h": 0,
+      "ms": 593
     },
     {
       "id": "mint_insurance",
@@ -772,17 +759,7 @@
       "httpStatus": 200,
       "fetched": 35,
       "verified24h": 0,
-      "ms": 6178
-    },
-    {
-      "id": "cnbc_global",
-      "name": "CNBC Global — Central Banks & Intl Finance",
-      "tier": "International Trusted Media",
-      "status": "OK",
-      "httpStatus": 200,
-      "fetched": 30,
-      "verified24h": 0,
-      "ms": 7690
+      "ms": 609
     },
     {
       "id": "pib_india",
@@ -792,7 +769,27 @@
       "httpStatus": 200,
       "fetched": 20,
       "verified24h": 0,
-      "ms": 9229
+      "ms": 738
+    },
+    {
+      "id": "cnbc_global",
+      "name": "CNBC Global — Central Banks & Intl Finance",
+      "tier": "International Trusted Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 30,
+      "verified24h": 0,
+      "ms": 1001
+    },
+    {
+      "id": "ndtv_profit",
+      "name": "NDTV Profit — Markets & Banking",
+      "tier": "Tier-1 Financial Media",
+      "status": "OK",
+      "httpStatus": 200,
+      "fetched": 20,
+      "verified24h": 0,
+      "ms": 1024
     }
   ]
 }

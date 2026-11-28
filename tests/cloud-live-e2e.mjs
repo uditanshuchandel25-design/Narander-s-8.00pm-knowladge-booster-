@@ -219,6 +219,18 @@ async function runCloudE2E() {
     assert.equal(stickyOk.stuck, true, "Sticky filter dock did not pin on live cloud Brief tab");
     console.log(`✔ Live Cloud Brief (${stickyOk.cards} cards) + Sticky Filter Dock smooth (${stickyOk.editionSubline})`);
 
+    // Test Approvals Tab Auto-Renewed Drafts & Sync Stamp on live cloud URL
+    await cdp.eval(`document.querySelector('.dock-btn[data-tab="approvals"]').click()`);
+    await sleep(250);
+    const approvalsOk = await cdp.eval(`({
+      stamp: document.getElementById('approvalsUpdatedStamp')?.textContent,
+      cards: document.querySelectorAll('#approvalsList .approval-card').length,
+      firstId: document.querySelector('#approvalsList .approval-card')?.dataset?.draftId || '',
+    })`);
+    assert.ok(approvalsOk.cards >= 3, `Expected >=3 live cloud approval drafts (incl. command draft), got ${approvalsOk.cards}`);
+    assert.match(approvalsOk.stamp || "", /SYNCED .*IST/i, `Approvals stamp missing IST time: ${approvalsOk.stamp}`);
+    console.log(`✔ Live Cloud Approvals auto-synced (${approvalsOk.cards} cards · ${approvalsOk.stamp})`);
+
     // Test Static-Cloud Archive Search
     await cdp.eval(`document.querySelector('.dock-btn[data-tab="system"]').click()`);
     await sleep(250);
