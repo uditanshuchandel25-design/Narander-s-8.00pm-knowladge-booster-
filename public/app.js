@@ -1407,6 +1407,14 @@ function initEvents() {
 }
 
 if ("serviceWorker" in navigator) {
+  const hadController = Boolean(navigator.serviceWorker.controller);
+  let reloadedForSw = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (hadController && !reloadedForSw) {
+      reloadedForSw = true;
+      window.location.reload();
+    }
+  });
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register("./sw.js")

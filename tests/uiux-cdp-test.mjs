@@ -16,7 +16,7 @@ import path from "node:path";
 import os from "node:os";
 import assert from "node:assert/strict";
 
-const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=16";
+const TARGET_URL = process.env.BM_TEST_URL || "http://localhost:8080/?v=17";
 const OUT_DIR = process.env.BM_SCREENSHOT_DIR || path.join(os.tmpdir(), "bm-intel-uiux-shots");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
