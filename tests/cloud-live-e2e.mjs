@@ -223,8 +223,13 @@ async function runCloudE2E() {
     await cdp.eval(`document.querySelector('.dock-btn[data-tab="system"]').click()`);
     await sleep(250);
     await cdp.eval(`document.querySelector('#quickSearchChips .chip[data-q="RBI"]').click()`);
-    await sleep(900);
+    for (let i = 0; i < 20; i++) {
+      await sleep(250);
+      const done = await cdp.eval(`!document.getElementById('searchMeta')?.textContent?.startsWith('Searching')`);
+      if (done) break;
+    }
     const archiveOk = await cdp.eval(`({
+      meta: document.getElementById('searchMeta')?.textContent,
       matches: document.querySelectorAll('#searchResultsList .intel-card').length,
       countdown: document.getElementById('countdownClock')?.textContent,
       sources: document.querySelectorAll('#sourceHealthList .source-row').length,

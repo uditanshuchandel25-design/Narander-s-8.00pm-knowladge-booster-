@@ -1083,21 +1083,25 @@ async function performSearch(query) {
   } else {
     const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
     const datesToScan = (state.editionsIndex || []).slice(0, 14).map((e) => e.editionDate);
-    for (const dateKey of datesToScan) {
-      try {
-        const res = await fetch(`./data/editions/${dateKey}.json?t=${Date.now()}`, { cache: "no-store" });
-        if (!res.ok) continue;
-        const ed = await res.json();
-        for (const sec of ed.sections || []) {
-          for (const item of sec.items || []) {
-            const hay = `${item.headline} ${item.summary} ${(item.keyPoints || []).join(" ")} ${item.branchImpact} ${item.source} ${item.insuranceType || ""} ${(item.bankCategories || []).join(" ")}`.toLowerCase();
-            if (terms.every((t) => hay.includes(t))) {
-              results.push({ ...item, sectionTitle: sec.shortTitle, editionDate: ed.editionDate });
-            }
+    const fetchedEditions = await Promise.all(
+      datesToScan.map(async (dateKey) => {
+        try {
+          const res = await fetch(`./data/editions/${dateKey}.json?t=${Date.now()}`, { cache: "no-store" });
+          return res.ok ? await res.json() : null;
+        } catch {
+          return null;
+        }
+      })
+    );
+    for (const ed of fetchedEditions) {
+      if (!ed) continue;
+      for (const sec of ed.sections || []) {
+        for (const item of sec.items || []) {
+          const hay = `${item.headline} ${item.summary} ${(item.keyPoints || []).join(" ")} ${item.branchImpact} ${item.source} ${item.insuranceType || ""} ${(item.bankCategories || []).join(" ")}`.toLowerCase();
+          if (terms.every((t) => hay.includes(t))) {
+            results.push({ ...item, sectionTitle: sec.shortTitle, editionDate: ed.editionDate });
           }
         }
-      } catch {
-        // skip
       }
     }
   }
